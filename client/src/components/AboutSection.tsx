@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Code, Palette, Zap, Users, Globe, Lightbulb } from "lucide-react";
-import headshotImage from "@assets/generated_images/Professional_headshot_portrait_e25dea3c.png";
+import headshotImage from "@assets/ChatGPT Image Sep 22, 2025, 01_50_17 AM_1763426260043.png";
 
 const skills = [
   { icon: Palette, label: "UI/UX Design" },
