@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
-import project1 from "@assets/Screenshot (213)_1763431804936.png";
+import project1 from "@assets/Screenshot (213)_1763432063864.png";
 import project2 from "@assets/generated_images/Mobile_shopping_app_project_7ce73043.png";
 import project3 from "@assets/generated_images/Creative_agency_website_project_553b8582.png";
 import project4 from "@assets/generated_images/Productivity_app_project_0633417a.png";
