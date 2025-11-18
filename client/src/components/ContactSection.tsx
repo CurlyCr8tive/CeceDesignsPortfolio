@@ -23,11 +23,11 @@ export default function ContactSection() {
           <div className="flex items-center justify-center gap-3 mb-6">
             <Mail className="w-6 h-6 text-primary" />
             <a
-              href="mailto:hello@cherice.com"
+              href="mailto:ChericeHeron@gmail.com"
               className="text-2xl md:text-3xl font-semibold hover:text-primary transition-colors"
               data-testid="link-email"
             >
-              hello@cherice.com
+              ChericeHeron@gmail.com
             </a>
           </div>
           <p className="text-muted-foreground mb-6">
@@ -35,7 +35,7 @@ export default function ContactSection() {
           </p>
           <Button
             size="lg"
-            onClick={() => window.location.href = "mailto:hello@cherice.com"}
+            onClick={() => window.location.href = "mailto:ChericeHeron@gmail.com"}
             className="px-8"
             data-testid="button-contact-email"
           >
