@@ -52,11 +52,11 @@ export default function ProjectsSection() {
               className="overflow-hidden hover-elevate transition-all duration-300 group"
               data-testid={`card-project-${index}`}
             >
-              <div className="aspect-video overflow-hidden">
+              <div className={index === 0 ? "overflow-hidden" : "aspect-video overflow-hidden"}>
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className={index === 0 ? "w-full object-contain transition-transform duration-500 group-hover:scale-105" : "w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"}
                   data-testid={`img-project-${index}`}
                 />
               </div>
