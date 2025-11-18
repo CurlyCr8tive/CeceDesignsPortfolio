@@ -11,9 +11,9 @@ export default function Footer() {
   };
 
   const socialLinks = [
-    { icon: Github, label: "GitHub" },
-    { icon: Linkedin, label: "LinkedIn" },
-    { icon: Twitter, label: "Twitter" },
+    { icon: Github, label: "GitHub", url: "https://github.com/CurlyCr8tive" },
+    { icon: Linkedin, label: "LinkedIn", url: "https://linkedin.com" },
+    { icon: Twitter, label: "Twitter", url: "https://twitter.com" },
   ];
 
   return (
@@ -57,7 +57,7 @@ export default function Footer() {
             {socialLinks.map((social, index) => (
               <button
                 key={index}
-                onClick={() => console.log(`Navigate to ${social.label}`)}
+                onClick={() => window.open(social.url, '_blank')}
                 className="text-muted-foreground hover:text-foreground transition-colors"
                 data-testid={`button-footer-social-${social.label.toLowerCase()}`}
                 aria-label={social.label}
