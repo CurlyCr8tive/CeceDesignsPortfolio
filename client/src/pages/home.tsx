@@ -1,8 +1,7 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
-import FeaturedWork from "@/components/FeaturedWork";
-import MoreWork from "@/components/MoreWork";
 import AboutSection from "@/components/AboutSection";
+import ProjectsSection from "@/components/ProjectsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import { useEffect } from "react";
@@ -19,9 +18,8 @@ export default function Home() {
     <div className="min-h-screen">
       <Navigation />
       <HeroSection />
-      <FeaturedWork />
-      <MoreWork />
       <AboutSection />
+      <ProjectsSection />
       <ContactSection />
       <Footer />
     </div>
