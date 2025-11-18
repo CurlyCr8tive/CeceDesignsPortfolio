@@ -23,8 +23,8 @@ export default function Navigation() {
   };
 
   const navLinks = [
-    { label: "About,", id: "about" },
-    { label: "Projects,", id: "projects" },
+    { label: "About", id: "about" },
+    { label: "Projects", id: "projects" },
     { label: "Resume", id: "resume" },
   ];
 
