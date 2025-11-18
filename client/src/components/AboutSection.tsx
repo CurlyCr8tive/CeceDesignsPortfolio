@@ -20,7 +20,7 @@ export default function AboutSection() {
             <img
               src={headshotImage}
               alt="Professional headshot"
-              className="rounded-2xl w-full max-w-md aspect-square object-cover"
+              className="rounded-2xl w-full max-w-md object-contain"
               data-testid="img-headshot"
             />
           </div>
