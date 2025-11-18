@@ -5,7 +5,7 @@ import { ExternalLink } from "lucide-react";
 import project1 from "@assets/Screenshot (213)_1763432063864.png";
 import project2 from "@assets/Screenshot (217)_1763434952523.png";
 import project3 from "@assets/Screenshot (228)_1763438686608.png";
-import project4 from "@assets/generated_images/Productivity_app_project_0633417a.png";
+import makeupBagImage from "@/../../attached_assets/Screenshot (229)_1763466455741.png";
 
 const projects = [
   {
@@ -29,7 +29,7 @@ const projects = [
   {
     title: "My Makeup Bag",
     description: "A mobile app design that transforms makeup organization from a stressful chore into a delightful, time-saving experience.",
-    image: project4,
+    image: makeupBagImage,
     tags: ["Figma", "SurveyMonkey", "TryMata"],
   },
 ];
