@@ -31,18 +31,16 @@ export default function AboutSection() {
             </h2>
             <div className="space-y-4 text-base md:text-lg max-w-prose mb-8" data-testid="text-about-bio">
               <p>
-                I'm a passionate designer and developer with over 5 years of experience creating
-                digital products that users love. My work sits at the intersection of beautiful
-                design and clean, efficient code.
+                I'm Cherice Heron, a UX/Product Designer who turns complex health and accessibility challenges into interfaces that feel simple, clear, and humane. I blend user research, inclusive design standards, and rapid prototyping to move teams from idea to working product without losing sight of the people who need it most. I believe design should reduce cognitive load and increase dignity; when products meet users where they are, outcomes improve for everyone.
               </p>
               <p>
-                I specialize in building responsive web applications with modern frameworks,
-                always keeping the user experience at the forefront. From concept to deployment,
-                I bring ideas to life with attention to detail and a commitment to quality.
+                Recent work includes Nephra, an AI-assisted kidney-health companion that helps patients track symptoms and prepare for appointments; Health Equity NYC, a dashboard that makes dense public data easy to navigate for residents and community health workers; and Influencer Scouting Automation (ISA) for 1v1Me, which pulls creator and match data, scores fit and momentum, and generates outreach briefs so teams can prioritize the right players and creators. Across projects I focus on accessible patterns, clear empty states, and rapid prototyping loops to validate decisions with users.
               </p>
               <p>
-                When I'm not coding or designing, you'll find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with the dev community.
+                I've completed UX/UI coursework and project work with General Assembly (Remote Flex), Springboard, and the Pursuit AI-Native Fellowship, and I bring earlier experience in research and direct care to every project.
+              </p>
+              <p>
+                When I'm not polishing flows, you'll find me enjoying K-dramas, playing RPGs, or hanging out with my two cats—who insist on supervising every prototype.
               </p>
             </div>
 
