@@ -9,10 +9,10 @@ import project4 from "@assets/generated_images/Productivity_app_project_0633417a
 
 const projects = [
   {
-    title: "Analytics Dashboard",
-    description: "A comprehensive analytics platform with real-time data visualization and custom reporting features.",
+    title: "Nephra",
+    description: "A comprehensive health tracking web application designed to support individuals managing chronic kidney disease (CKD).",
     image: project1,
-    tags: ["React", "TypeScript", "D3.js"],
+    tags: ["React", "Anthropic Claude", "Supabase"],
   },
   {
     title: "E-Commerce Mobile App",
