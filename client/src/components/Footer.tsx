@@ -22,7 +22,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
             <p className="text-sm text-muted-foreground" data-testid="text-copyright">
-              © {currentYear} Alex Rivera. All rights reserved.
+              © {currentYear} Cherice Heron. All rights reserved.
             </p>
             <p className="text-xs text-muted-foreground mt-1" data-testid="text-built-with">
               Built with React, TypeScript & Tailwind CSS

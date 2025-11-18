@@ -23,9 +23,9 @@ export default function Navigation() {
   };
 
   const navLinks = [
-    { label: "About", id: "about" },
-    { label: "Projects", id: "projects" },
-    { label: "Contact", id: "contact" },
+    { label: "About,", id: "about" },
+    { label: "Projects,", id: "projects" },
+    { label: "Resume", id: "resume" },
   ];
 
   return (
@@ -47,13 +47,14 @@ export default function Navigation() {
               Portfolio
             </button>
 
-            <nav className="hidden md:flex items-center gap-2">
+            <nav className="hidden md:flex items-center gap-1">
               {navLinks.map((link) => (
                 <Button
                   key={link.id}
                   variant="ghost"
                   onClick={() => scrollToSection(link.id)}
                   data-testid={`button-nav-${link.id}`}
+                  className="text-primary hover:text-primary font-semibold"
                 >
                   {link.label}
                 </Button>
@@ -80,7 +81,7 @@ export default function Navigation() {
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="text-3xl font-serif font-semibold hover-elevate active-elevate-2 px-6 py-3 rounded-md"
+                className="text-3xl font-serif font-semibold text-primary hover-elevate active-elevate-2 px-6 py-3 rounded-md"
                 data-testid={`button-mobile-nav-${link.id}`}
               >
                 {link.label}

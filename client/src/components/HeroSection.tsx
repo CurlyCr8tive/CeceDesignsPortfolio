@@ -24,7 +24,7 @@ export default function HeroSection() {
 
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto text-white">
         <h1 className="text-6xl md:text-7xl lg:text-8xl font-serif font-bold mb-6" data-testid="text-hero-name">
-          Alex Rivera
+          Cherice Heron
         </h1>
         <p className="text-xl md:text-2xl font-medium mb-4" data-testid="text-hero-title">
           Product Designer & Creative Developer
