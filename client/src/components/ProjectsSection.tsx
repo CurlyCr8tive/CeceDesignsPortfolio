@@ -27,10 +27,10 @@ const projects = [
     tags: ["Recharts", "Next.js API Routes", "OpenAI API"],
   },
   {
-    title: "Task Management System",
-    description: "Intuitive productivity app with kanban boards, team collaboration, and deadline tracking.",
+    title: "My Makeup Bag",
+    description: "A mobile app design that transforms makeup organization from a stressful chore into a delightful, time-saving experience.",
     image: project4,
-    tags: ["Vue.js", "Firebase", "Vuetify"],
+    tags: ["Figma", "SurveyMonkey", "TryMata"],
   },
 ];
 
