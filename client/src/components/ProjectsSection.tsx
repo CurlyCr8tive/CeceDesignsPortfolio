@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import project1 from "@assets/Screenshot (213)_1763432063864.png";
 import project2 from "@assets/Screenshot (217)_1763434952523.png";
-import project3 from "@assets/generated_images/Creative_agency_website_project_553b8582.png";
+import project3 from "@assets/Screenshot (228)_1763438686608.png";
 import project4 from "@assets/generated_images/Productivity_app_project_0633417a.png";
 
 const projects = [
@@ -52,11 +52,11 @@ export default function ProjectsSection() {
               className="overflow-hidden hover-elevate transition-all duration-300 group"
               data-testid={`card-project-${index}`}
             >
-              <div className={index <= 1 ? "overflow-hidden" : "aspect-video overflow-hidden"}>
+              <div className={index <= 2 ? "overflow-hidden" : "aspect-video overflow-hidden"}>
                 <img
                   src={project.image}
                   alt={project.title}
-                  className={index <= 1 ? "w-full object-contain transition-transform duration-500 group-hover:scale-105" : "w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"}
+                  className={index <= 2 ? "w-full object-contain transition-transform duration-500 group-hover:scale-105" : "w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"}
                   data-testid={`img-project-${index}`}
                 />
               </div>
