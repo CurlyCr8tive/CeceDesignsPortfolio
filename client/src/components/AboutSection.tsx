@@ -1,62 +1,29 @@
 import { Card } from "@/components/ui/card";
-import { Code, Palette, Zap, Users, Globe, Lightbulb } from "lucide-react";
-import headshotImage from "@assets/generated_images/Professional_headshot_portrait_e25dea3c.png";
-
-const skills = [
-  { icon: Palette, label: "UI/UX Design" },
-  { icon: Code, label: "Frontend Development" },
-  { icon: Zap, label: "Performance Optimization" },
-  { icon: Users, label: "User Research" },
-  { icon: Globe, label: "Responsive Design" },
-  { icon: Lightbulb, label: "Creative Problem Solving" },
-];
+import portraitImage from "@assets/ChatGPT Image Sep 22, 2025, 01_50_17 AM_1763425821495.png";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-20 md:py-32 px-4" data-testid="section-about">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+    <section id="about" className="py-16 md:py-20 px-4" data-testid="section-about">
+      <div className="max-w-5xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center lg:justify-start">
             <img
-              src={headshotImage}
-              alt="Professional headshot"
+              src={portraitImage}
+              alt="Portrait of Cherice Heron"
               className="rounded-2xl w-full max-w-md aspect-square object-cover"
-              data-testid="img-headshot"
+              data-testid="img-portrait"
             />
           </div>
 
           <div>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-8" data-testid="text-about-title">
-              About Me
+            <h2 className="text-3xl md:text-4xl font-bold mb-6" data-testid="text-about-title">
+              About
             </h2>
-            <div className="space-y-4 text-base md:text-lg max-w-prose mb-8" data-testid="text-about-bio">
+            <div className="space-y-4 text-base md:text-lg leading-relaxed" data-testid="text-about-bio">
               <p>
-                I'm a passionate designer and developer with over 5 years of experience creating
-                digital products that users love. My work sits at the intersection of beautiful
-                design and clean, efficient code.
+                I come from direct care and research, and I design like someone who has sat with people in real-world systems: 
+                I care about clarity, emotional safety, and making complex flows feel human-scale.
               </p>
-              <p>
-                I specialize in building responsive web applications with modern frameworks,
-                always keeping the user experience at the forefront. From concept to deployment,
-                I bring ideas to life with attention to detail and a commitment to quality.
-              </p>
-              <p>
-                When I'm not coding or designing, you'll find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with the dev community.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              {skills.map((skill, index) => (
-                <Card
-                  key={index}
-                  className="p-4 flex flex-col items-center text-center gap-3 hover-elevate"
-                  data-testid={`card-skill-${index}`}
-                >
-                  <skill.icon className="w-6 h-6 text-primary" />
-                  <span className="text-sm font-medium">{skill.label}</span>
-                </Card>
-              ))}
             </div>
           </div>
         </div>

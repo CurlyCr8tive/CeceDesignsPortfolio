@@ -1,0 +1,43 @@
+Cece
+WorkAboutResume
+UX • Accessibility • Product Design
+Hi, I’m Cherice Heron.
+I design accessible products that delight and empower people navigating health, everyday life, and their relationships with technology.
+See my workResume
+Currently focused on AI-native experiences, chronic illness support, and pet-centric tools like Whisker Wise.
+
+Featured Work
+A deeper look into my end-to-end UX process.
+Nephra – Kidney Health Companion
+build for late-stage kidney disease patients. Nephra tracks daily symptoms
+ (blood pressure, water intake, pain, stress, and more), pairs them with an AI journal companion,
+  and organizes education, questions, and next steps to help people prepare for nephrology
+  appointments and move through the transplant process with less confusion and delay.
+
+Health techUX • UI
+Live / demo linkView code on GitHub
+
+More work
+In-progress builds and shipped experiments across health, civic, and lifestyle.
+Health Equity NYC Dashboard
+A data-to-UI exploration that surfaces asthma, diabetes, and hypertension trends across NYC in plain language for community health workers and residents.
+Civic / public healthData visualization
+Live / demo linkView code on GitHub
+My Makeup Bag – Virtual Inventory
+ A UX case study and Figma prototype for a virtual makeup inventory that lets users log what they own,
+  see smart VR-style overlay suggestions for looks using their existing products, and get ideas for physical
+  organizers that match their real makeup collection.
+
+UX case studyFigma prototype
+View Figma prototypeView case study
+Whisker Wise – ESA & Cat Care Companion
+A guided experience for ESA cat guardians that explains legitimate housing accommodations, flags predatory “ESA registry” scams, and helps people understand and respond to their cat’s behavior.
+Role: UX research, IA, interaction design, content design • Tools: Figma, FigJam
+View clickable prototypeRead case study
+Work in progress
+Live / demo linkView code / file
+About
+I come from direct care and research, and I design like someone who has sat with people in real-world systems: I care about clarity, emotional safety, and making complex flows feel human-scale.
+Contact & resume
+For roles or collaborations in UX / UI, accessible AI products, or health and civic tech, you can reach me at ChericeHeron@gmail.com.
+You can also link your resume here: Download my resume (PDF)

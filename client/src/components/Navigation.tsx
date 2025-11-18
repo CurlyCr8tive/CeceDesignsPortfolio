@@ -23,9 +23,9 @@ export default function Navigation() {
   };
 
   const navLinks = [
-    { label: "About", id: "about" },
-    { label: "Projects", id: "projects" },
-    { label: "Contact", id: "contact" },
+    { label: "Home", id: "hero" },
+    { label: "Work", id: "work" },
+    { label: "Resume", id: "resume" },
   ];
 
   return (
@@ -37,14 +37,14 @@ export default function Navigation() {
             : "bg-transparent"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
             <button
               onClick={() => scrollToSection("hero")}
-              className="font-serif text-xl md:text-2xl font-bold hover-elevate active-elevate-2 px-3 py-2 rounded-md"
+              className="font-serif text-2xl md:text-3xl font-bold hover-elevate active-elevate-2 px-3 py-2 rounded-md"
               data-testid="button-logo"
             >
-              Portfolio
+              Cece
             </button>
 
             <nav className="hidden md:flex items-center gap-2">
