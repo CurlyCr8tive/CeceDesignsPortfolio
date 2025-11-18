@@ -15,10 +15,10 @@ const projects = [
     tags: ["React", "Anthropic Claude", "Supabase"],
   },
   {
-    title: "E-Commerce Mobile App",
-    description: "Beautiful shopping experience with seamless checkout and personalized recommendations.",
+    title: "Influencer CRM",
+    description: "A comprehensive influencer relationship management platform designed specifically for gaming content creators.",
     image: project2,
-    tags: ["React Native", "Node.js", "Stripe"],
+    tags: ["TypeScript", "Tailwind CSS", "Figma"],
   },
   {
     title: "Creative Agency Website",
