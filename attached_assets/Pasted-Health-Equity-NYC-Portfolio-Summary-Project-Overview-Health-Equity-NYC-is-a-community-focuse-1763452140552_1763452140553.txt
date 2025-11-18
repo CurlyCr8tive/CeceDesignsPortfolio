@@ -1,0 +1,170 @@
+Health Equity NYC - Portfolio Summary
+
+Project Overview
+
+Health Equity NYC is a community-focused data visualization and analytics dashboard that empowers NYC residents, health workers, and advocates to understand health disparities across the five boroughs. The application combines real-world health data with environmental factors to tell the story of health equity in New York City in plain, accessible language.
+
+**Live Demo:** [vercel.com/cherice-herons-projects](https://vercel.com/cherice-herons-projects/v0-health-equity-nyc-8b)
+
+🎯 Core Problem Solved
+Health data exists, but most people don't understand it. This dashboard translates complex health statistics into actionable community insights, enabling residents to advocate for better health resources and understand what's happening in their neighborhoods.
+
+✨ Key Features
+
+1. Advanced Multi-Dimensional Filtering**
+
+- Filter by 10+ health conditions (Diabetes, Hypertension, Asthma, Heart Disease, etc.)
+- Geographic selection: 5 boroughs, 200+ neighborhoods, ZIP codes
+- Demographic filtering: Age groups, race/ethnicity, income ranges
+- Environmental factors: Air quality, green space, food access, transit, housing quality
+- Real-time data recalculation across all visualizations
+
+
+2. Interactive NYC Health Map
+
+- Clickable borough map showing health risk levels with color-coding
+- Environmental overlays for air quality, food deserts, green spaces
+- Neighborhood drill-down with detailed local statistics
+- Dynamic data points that update based on selected filters
+
+
+3. Dynamic Data Visualizations
+
+- Health condition prevalence charts by borough
+- 5-year trend analysis
+- Demographic breakdowns
+- Environmental risk correlations
+- Population-adjusted rate calculations
+- Responsive, mobile-friendly charts
+
+
+4. Plain-Language Community Insights
+
+- "X out of 100 neighbors affected" metrics
+- Community health status assessments (Good / Concerning / Needs Attention)
+- Urgency level indicators
+- Simple explanations of what data means for communities
+- Actionable recommendations
+
+
+5. AI-Powered Report Generation
+
+- OpenAI integration for automated community health reports
+- Personalized area assessments with comparisons to NYC averages
+- Professional PDF export with visualizations
+- CSV export for data analysis
+
+
+6. Educational Resources
+
+- Health Condition Library: 6+ major conditions with NYC-specific data
+- Environmental Health Guide: Air quality, water quality, green space, food environment, transportation, housing
+- Community Action Guides: How to advocate for improvements
+- Plain language explanations replacing medical jargon
+
+
+7. Data Export & Sharing
+
+- CSV export with community context
+- Professional PDF reports
+- Social sharing capabilities
+- Print-friendly formats
+
+
+🏗️ Technical Architecture
+
+Frontend Stack:
+
+- Framework: Next.js 15 with App Router
+- UI Components: React 19 + Shadcn/UI
+- Styling: Tailwind CSS with custom design tokens
+- Charts: Recharts for responsive data visualization
+- Type Safety: TypeScript with strict mode
+
+
+Backend:
+
+- Next.js API Routes for data processing
+- Supabase integration for data management
+- OpenAI API for AI-powered insights
+- Real-time data transformation
+
+
+Performance Optimizations:
+
+- Server-side rendering for fast initial loads
+- Lazy loading for large datasets
+- Caching for frequently accessed data
+- Automatic code splitting
+
+
+📊 Data Integration
+
+- CDC Health Data: Major health conditions by borough and demographic
+- NYC Department of Health: Official health statistics
+- NYC Open Data: Environmental and geographic data
+- EPA Data: Air quality monitoring
+- MTA Data: Transit accessibility
+- NYC Parks: Green space coverage
+
+♿ Accessibility & UX
+
+- WCAG 2.1 compliance
+- Screen reader support
+- Keyboard navigation
+- High contrast modes
+- Mobile-first responsive design
+- Multi-language framework (Spanish translation ready)
+
+
+🎨 Design Highlights
+
+- Color Scheme: Blue (primary health), Purple (accent), Green (environmental), with careful contrast ratios
+- Typography: Clean, modern sans-serif fonts optimized for readability
+- Layout: Grid-based responsive design with sidebar filters
+- User Experience: Community-focused language replacing technical jargon
+
+💡 Impact & Use Cases
+
+For Community Residents:
+
+- Understand health conditions in their neighborhood
+- Find local health resources and centers
+- Make informed decisions about family health
+- Connect with community advocates
+
+
+For Health Workers:
+
+- Access data-driven insights about community needs
+- Generate reports for grant applications
+- Identify areas needing intervention
+- Compare health outcomes across locations
+
+
+For Advocates & Organizers:
+
+- Use data to support advocacy campaigns
+- Understand health disparities in depth
+- Create reports for policy makers
+- Mobilize communities around health equity
+
+
+🚀 Notable Achievements
+
+✅ Multi-filter system that dynamically updates all 5 major sections simultaneously
+✅ Real-time health data calculation with demographic & geographic segmentation
+✅ Interactive mapping with borough-level data visualization
+✅ AI integration for automated, contextual report generation
+✅ Accessible design meeting WCAG 2.1 standards
+✅ Plain-language UX making complex health data understandable to general audiences
+✅ Professional export capabilities for advocacy and policy work
+
+🔮 Future Enhancements
+
+- Multi-language support (Spanish priority)
+- Personal health data upload and analysis
+- Real-time environmental alerts
+- Community event integration
+- Advanced predictive analytics
+- Mobile app version
