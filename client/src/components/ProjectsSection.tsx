@@ -21,10 +21,10 @@ const projects = [
     tags: ["TypeScript", "Tailwind CSS", "Figma"],
   },
   {
-    title: "Creative Agency Website",
-    description: "Modern, bold website design for a creative agency with smooth animations and interactive elements.",
+    title: "Health Equity NYC",
+    description: "A community-focused data visualization and analytics dashboard that empowers NYC residents, health workers, and advocates to understand health disparities across the five boroughs.",
     image: project3,
-    tags: ["Next.js", "Framer Motion", "Tailwind"],
+    tags: ["Recharts", "Next.js API Routes", "OpenAI API"],
   },
   {
     title: "Task Management System",
