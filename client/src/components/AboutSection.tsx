@@ -19,17 +19,18 @@ export default function AboutSection() {
     <section id="about" className="py-20 md:py-32 px-4" data-testid="section-about">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="flex justify-center lg:justify-start">
-            <div className="relative flex flex-col gap-8">
+            <div className="flex justify-center lg:justify-start self-start pt-2">
+            <div className="relative flex flex-col gap-8 w-full">
               <div className="absolute inset-0 bg-primary/10 rounded-full blur-3xl -z-10" />
               {[headshotImage1, headshotImage2, headshotImage3].map((img, idx) => (
-                <img
-                  key={idx}
-                  src={img}
-                  alt={idx === 0 ? "Equity" : idx === 1 ? "Accessibility" : "Clarity"}
-                  className="w-full max-w-sm transition-all duration-700 mix-blend-multiply"
-                  data-testid={`img-headshot-${idx}`}
-                />
+                <div key={idx} style={{ backgroundColor: '#FFF5F7' }} className="rounded-2xl overflow-hidden">
+                  <img
+                    src={img}
+                    alt={idx === 0 ? "Equity" : idx === 1 ? "Accessibility" : "Clarity"}
+                    className="w-full transition-all duration-700 mix-blend-multiply"
+                    data-testid={`img-headshot-${idx}`}
+                  />
+                </div>
               ))}
             </div>
           </div>
