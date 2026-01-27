@@ -20,11 +20,11 @@ export default function AboutSection() {
             <div className="flex justify-center lg:justify-start">
             <div className="relative">
               <div className="absolute inset-0 bg-primary/10 rounded-full blur-3xl -z-10" />
-              <div style={{ backgroundColor: '#FFF5F7', padding: '20px', borderRadius: '8px' }} className="image-container">
+              <div className="image-container" style={{ background: '#FFF5F7', padding: '0px' }}>
                 <img
                   src={headshotImage}
                   alt="Flowers"
-                  className="w-full max-w-xl transition-all duration-700"
+                  className="w-full max-w-xl transition-all duration-700 mix-blend-multiply"
                   data-testid="img-headshot"
                 />
               </div>
