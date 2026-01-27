@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Code, Palette, Zap, Users, Globe, Lightbulb } from "lucide-react";
-import headshotImage from "@/../../attached_assets/Gemini_Generated_Image_5v4vlo5v4vlo5v4v_1769552874985.png";
+import headshotImage from "@/../../attached_assets/69c60adf-621b-42c2-96ac-3307bdf605cc_1769553104922.jpeg";
 
 const skills = [
   { icon: Palette, label: "UI/UX Design" },
@@ -23,7 +23,7 @@ export default function AboutSection() {
               <img
                 src={headshotImage}
                 alt="Equity Accessibility Clarity"
-                className="w-full max-w-xl transition-all duration-700 rounded-2xl shadow-sm"
+                className="w-full max-w-xl transition-all duration-700 rounded-2xl"
                 data-testid="img-headshot"
               />
             </div>
