@@ -23,11 +23,11 @@ export default function AboutSection() {
             <div className="relative flex flex-col gap-4 w-full max-w-[240px]">
               <div className="absolute inset-0 bg-primary/10 rounded-full blur-3xl -z-10" />
               {[headshotImage1, headshotImage2, headshotImage3].map((img, idx) => (
-                <div key={idx} className="rounded-xl overflow-hidden bg-[#FAF6F6]">
+                <div key={idx} className="rounded-xl overflow-hidden bg-transparent">
                   <img
                     src={img}
                     alt={idx === 0 ? "Equity" : idx === 1 ? "Accessibility" : "Clarity"}
-                    className="w-full aspect-[3/4] object-cover transition-all duration-700 mix-blend-multiply"
+                    className="w-full aspect-[3/4] object-cover transition-all duration-700 mix-blend-multiply brightness-[1.02] contrast-[1.05]"
                     data-testid={`img-headshot-${idx}`}
                   />
                 </div>
