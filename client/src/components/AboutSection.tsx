@@ -1,9 +1,9 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Code, Palette, Zap, Users, Globe, Lightbulb } from "lucide-react";
-import headshotImage1 from "@/../../attached_assets/Gemini_Generated_Image_2z9u372z9u372z9u_1769553760015.png";
-import headshotImage2 from "@/../../attached_assets/Gemini_Generated_Image_2z9u372z9u372z9u_(1)_1769553760014.png";
-import headshotImage3 from "@/../../attached_assets/Gemini_Generated_Image_2z9u372z9u372z9u_(2)_1769553760015.png";
+import headshotImage1 from "@/../../attached_assets/Gemini_Generated_Image_9cb6ne9cb6ne9cb6_1769554395185.png";
+import headshotImage2 from "@/../../attached_assets/Gemini_Generated_Image_9cb6ne9cb6ne9cb6_(1)_1769554395185.png";
+import headshotImage3 from "@/../../attached_assets/Gemini_Generated_Image_9cb6ne9cb6ne9cb6_(2)_1769554395185.png";
 
 const skills = [
   { icon: Palette, label: "UI/UX Design" },
@@ -20,14 +20,14 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="flex justify-center lg:justify-start self-start pt-4">
-            <div className="relative flex flex-col gap-6 w-full max-w-[280px]">
+            <div className="relative flex flex-col gap-4 w-full max-w-[240px]">
               <div className="absolute inset-0 bg-primary/10 rounded-full blur-3xl -z-10" />
               {[headshotImage1, headshotImage2, headshotImage3].map((img, idx) => (
-                <div key={idx} className="rounded-xl overflow-hidden bg-[#FAF6F6]">
+                <div key={idx} className="rounded-xl overflow-hidden bg-background">
                   <img
                     src={img}
                     alt={idx === 0 ? "Equity" : idx === 1 ? "Accessibility" : "Clarity"}
-                    className="w-full transition-all duration-700 mix-blend-multiply"
+                    className="w-full aspect-[3/4] object-cover transition-all duration-700 mix-blend-multiply"
                     data-testid={`img-headshot-${idx}`}
                   />
                 </div>
