@@ -21,13 +21,13 @@ export default function AboutSection() {
             <div className="relative">
               <div className="absolute inset-0 bg-primary/10 rounded-full blur-3xl -z-10" />
               <div 
-                className="w-full max-w-md aspect-square rounded-2xl overflow-hidden shadow-xl border border-border"
+                className="w-full max-w-md aspect-square rounded-2xl overflow-hidden shadow-xl border border-border bg-[#FDF2F4]"
                 data-testid="container-headshot"
               >
                 <img
                   src={headshotImage}
                   alt="Cherice Heron"
-                  className="w-full h-full object-cover transition-all duration-700"
+                  className="w-full h-full object-contain transition-all duration-700 mix-blend-multiply scale-150"
                   data-testid="img-headshot"
                 />
               </div>
