@@ -84,8 +84,8 @@ export default function ProjectsSection() {
                 {project.link !== "#" ? (
                   <Link href={project.link}>
                     <Button
-                      variant="link"
-                      className="text-primary p-0 h-auto text-lg font-bold group/btn"
+                      variant="ghost"
+                      className="text-primary p-0 h-auto text-lg font-bold group/btn no-default-hover-elevate no-default-active-elevate hover:bg-transparent"
                       data-testid={`button-view-project-${index}`}
                     >
                       View Case Study
@@ -94,8 +94,8 @@ export default function ProjectsSection() {
                   </Link>
                 ) : (
                   <Button
-                    variant="link"
-                    className="text-primary p-0 h-auto text-lg font-bold group/btn"
+                    variant="ghost"
+                    className="text-primary p-0 h-auto text-lg font-bold group/btn no-default-hover-elevate no-default-active-elevate hover:bg-transparent"
                     onClick={() => console.log(`View project: ${project.title}`)}
                     data-testid={`button-view-project-${index}`}
                   >

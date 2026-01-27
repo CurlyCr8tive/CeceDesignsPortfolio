@@ -50,29 +50,24 @@ export default function Navigation() {
               </button>
             </Link>
 
-            <nav className="hidden md:flex items-center gap-1">
+            <nav className="hidden md:flex items-center gap-8">
               {navLinks.map((link) => (
                 link.type === "link" ? (
-                  <Button
-                    key={link.label}
-                    variant="ghost"
-                    asChild
-                    data-testid={`button-nav-${link.label.toLowerCase()}`}
-                    className="text-primary hover:text-primary font-semibold"
-                  >
-                    <Link href={link.path!}>{link.label}</Link>
-                  </Button>
+                  <Link key={link.label} href={link.path!}>
+                    <button className="text-foreground hover:text-primary font-medium transition-colors" data-testid={`button-nav-${link.label.toLowerCase()}`}>
+                      {link.label}
+                    </button>
+                  </Link>
                 ) : (
-                  <Button
+                  <button
                     key={link.label}
-                    variant="ghost"
                     onClick={() => scrollToSection(link.id!)}
                     data-testid={`button-nav-${link.id}`}
-                    className="text-primary hover:text-primary font-semibold"
+                    className="text-foreground hover:text-primary font-medium transition-colors"
                     disabled={location !== "/"}
                   >
                     {link.label}
-                  </Button>
+                  </button>
                 )
               ))}
             </nav>
