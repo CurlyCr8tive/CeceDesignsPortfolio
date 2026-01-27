@@ -40,10 +40,10 @@ export default function AboutSection() {
               <p>
                 I specialize in creating thoughtful digital experiences that are beautiful and enjoyable. My background spans finance products at Oracle to community-driven health initiatives like Health Equity NYC.
               </p>
-              <div className="pt-4">
+              <div className="pt-4 pb-12">
                 <Button 
                   onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="rounded-full px-8 py-6 text-lg"
+                  className="rounded-full px-6 py-2 h-auto text-base"
                 >
                   Get in Touch
                 </Button>
