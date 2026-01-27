@@ -51,7 +51,7 @@ export default function HeroSection() {
           <img 
             src={avatarImage} 
             alt="Cherice Heron" 
-            className="relative z-10 w-full max-w-md rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
+            className="relative z-10 w-full max-w-md rounded-2xl shadow-2xl transition-all duration-700"
           />
         </div>
       </div>

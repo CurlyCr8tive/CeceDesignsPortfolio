@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Code, Palette, Zap, Users, Globe, Lightbulb } from "lucide-react";
-import headshotImage from "@/../../attached_assets/ChatGPT_Image_Jan_27,_2026,_02_10_29_PM_1769541038009.png";
+import headshotImage from "@/../../attached_assets/Gemini_Generated_Image_vihmkevihmkevihm_1769541232303.png";
 
 const skills = [
   { icon: Palette, label: "UI/UX Design" },
@@ -23,7 +23,7 @@ export default function AboutSection() {
               <img
                 src={headshotImage}
                 alt="Cherice Heron"
-                className="rounded-2xl w-full max-w-md object-contain grayscale hover:grayscale-0 transition-all duration-700 shadow-xl border border-border"
+                className="rounded-2xl w-full max-w-md object-contain transition-all duration-700 shadow-xl border border-border"
                 data-testid="img-headshot"
               />
             </div>
