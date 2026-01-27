@@ -47,14 +47,12 @@ export default function HeroSection() {
         </div>
 
         <div className="relative flex justify-center items-center">
-          <div className="absolute inset-0 bg-primary/10 rounded-full blur-3xl opacity-50" />
-          <div className="relative z-10 w-full max-w-md aspect-square rounded-2xl overflow-hidden shadow-2xl">
-            <img 
-              src={avatarImage} 
-              alt="Cherice Heron" 
-              className="w-full h-full object-cover transition-all duration-700 hover:scale-105"
-            />
-          </div>
+          <div className="absolute inset-0 bg-primary/5 rounded-full blur-3xl" />
+          <img 
+            src={avatarImage} 
+            alt="Cherice Heron" 
+            className="relative z-10 w-full max-w-md rounded-2xl shadow-2xl transition-all duration-700"
+          />
         </div>
       </div>
 
