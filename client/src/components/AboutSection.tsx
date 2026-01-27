@@ -23,7 +23,7 @@ export default function AboutSection() {
               <img
                 src={headshotImage}
                 alt="Cherice Heron"
-                className="rounded-2xl w-full max-w-md object-contain transition-all duration-700 shadow-xl border border-border"
+                className="w-full max-w-md transition-all duration-700 mix-blend-multiply"
                 data-testid="img-headshot"
               />
             </div>
