@@ -25,8 +25,8 @@ export default function Navigation() {
   };
 
   const navLinks = [
-    { label: "Work", id: "projects", type: "scroll" },
     { label: "About", id: "about", type: "scroll" },
+    { label: "Projects", id: "projects", type: "scroll" },
     { label: "Resume", path: "/resume", type: "link" },
   ];
 
@@ -54,7 +54,7 @@ export default function Navigation() {
               {navLinks.map((link) => (
                 link.type === "link" ? (
                   <Link key={link.label} href={link.path!}>
-                    <button className="text-foreground hover:text-primary font-medium transition-colors" data-testid={`button-nav-${link.label.toLowerCase()}`}>
+                    <button className="text-foreground hover:text-primary font-bold transition-colors" data-testid={`button-nav-${link.label.toLowerCase()}`}>
                       {link.label}
                     </button>
                   </Link>
@@ -63,7 +63,7 @@ export default function Navigation() {
                     key={link.label}
                     onClick={() => scrollToSection(link.id!)}
                     data-testid={`button-nav-${link.id}`}
-                    className="text-foreground hover:text-primary font-medium transition-colors"
+                    className="text-foreground hover:text-primary font-bold transition-colors"
                     disabled={location !== "/"}
                   >
                     {link.label}
