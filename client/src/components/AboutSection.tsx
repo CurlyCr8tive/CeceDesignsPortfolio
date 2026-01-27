@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Code, Palette, Zap, Users, Globe, Lightbulb } from "lucide-react";
-import headshotImage from "@/../../attached_assets/Gemini_Generated_Image_vihmkevihmkevihm_1769541232303.png";
+import headshotImage from "@/../../attached_assets/Gemini_Generated_Image_kmvxotkmvxotkmvx_1769552387158.png";
 
 const skills = [
   { icon: Palette, label: "UI/UX Design" },
@@ -27,7 +27,7 @@ export default function AboutSection() {
                 <img
                   src={headshotImage}
                   alt="Cherice Heron"
-                  className="w-full h-full object-contain transition-all duration-700 mix-blend-multiply scale-150"
+                  className="w-full h-full object-cover transition-all duration-700 mix-blend-multiply scale-[2.2] translate-y-[5%]"
                   data-testid="img-headshot"
                 />
               </div>
