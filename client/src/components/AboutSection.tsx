@@ -1,7 +1,9 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Code, Palette, Zap, Users, Globe, Lightbulb } from "lucide-react";
-import headshotImage from "@/../../attached_assets/69c60adf-621b-42c2-96ac-3307bdf605cc_1769553104922.jpeg";
+import headshotImage1 from "@/../../attached_assets/Gemini_Generated_Image_2z9u372z9u372z9u_1769553760015.png";
+import headshotImage2 from "@/../../attached_assets/Gemini_Generated_Image_2z9u372z9u372z9u_(1)_1769553760014.png";
+import headshotImage3 from "@/../../attached_assets/Gemini_Generated_Image_2z9u372z9u372z9u_(2)_1769553760015.png";
 
 const skills = [
   { icon: Palette, label: "UI/UX Design" },
@@ -18,14 +20,17 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="flex justify-center lg:justify-start">
-            <div className="relative">
+            <div className="relative flex flex-col gap-8">
               <div className="absolute inset-0 bg-primary/10 rounded-full blur-3xl -z-10" />
-              <img
-                src={headshotImage}
-                alt="Equity Accessibility Clarity"
-                className="w-full max-w-xl transition-all duration-700 rounded-2xl mix-blend-multiply"
-                data-testid="img-headshot"
-              />
+              {[headshotImage1, headshotImage2, headshotImage3].map((img, idx) => (
+                <img
+                  key={idx}
+                  src={img}
+                  alt={idx === 0 ? "Equity" : idx === 1 ? "Accessibility" : "Clarity"}
+                  className="w-full max-w-sm transition-all duration-700 mix-blend-multiply"
+                  data-testid={`img-headshot-${idx}`}
+                />
+              ))}
             </div>
           </div>
 
