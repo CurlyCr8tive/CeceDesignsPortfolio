@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
-import avatarImage from "@/../../attached_assets/Screenshot (229)_1763466455741.png";
+import avatarImage from "@/../../attached_assets/Screenshot_2026-01-27_at_12.27.52_PM_1769540457749.png";
 
 export default function HeroSection() {
   const scrollToProjects = () => {
