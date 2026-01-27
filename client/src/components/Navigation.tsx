@@ -25,8 +25,8 @@ export default function Navigation() {
   };
 
   const navLinks = [
+    { label: "Work", id: "projects", type: "scroll" },
     { label: "About", id: "about", type: "scroll" },
-    { label: "Projects", id: "projects", type: "scroll" },
     { label: "Resume", path: "/resume", type: "link" },
   ];
 
@@ -43,10 +43,10 @@ export default function Navigation() {
           <div className="flex items-center justify-between h-16 md:h-20">
             <Link href="/">
               <button
-                className="font-serif text-xl md:text-2xl font-bold hover-elevate active-elevate-2 px-3 py-2 rounded-md"
+                className="font-serif text-2xl font-bold tracking-tighter hover-elevate active-elevate-2 px-3 py-2 rounded-md"
                 data-testid="button-logo"
               >
-                Portfolio
+                Cherice Heron.
               </button>
             </Link>
 
