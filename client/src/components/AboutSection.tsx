@@ -23,7 +23,7 @@ export default function AboutSection() {
               <img
                 src={headshotImage}
                 alt="Equity Accessibility Clarity"
-                className="w-full max-w-xl transition-all duration-700 rounded-2xl"
+                className="w-full max-w-xl transition-all duration-700 rounded-2xl mix-blend-multiply"
                 data-testid="img-headshot"
               />
             </div>
