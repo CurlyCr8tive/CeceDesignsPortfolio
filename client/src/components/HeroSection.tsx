@@ -19,10 +19,10 @@ export default function HeroSection() {
       <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
         <div className="text-left z-10">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-6 text-foreground leading-tight" data-testid="text-hero-name">
-            Hi, I'm Cherice.<br />A product designer.
+            Hi, I'm Cherice.<br />A Product Designer & Creative Developer
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-xl leading-relaxed" data-testid="text-hero-tagline">
-            Currently designing accessible health solutions at Nephra. Previously specialized in health equity and influencer platforms.
+            Crafting beautiful digital experiences that blend great design with real functionality.
           </p>
           <div className="flex gap-4">
             <Button
