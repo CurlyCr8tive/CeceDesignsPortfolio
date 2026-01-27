@@ -20,12 +20,17 @@ export default function AboutSection() {
           <div className="flex justify-center lg:justify-start">
             <div className="relative">
               <div className="absolute inset-0 bg-primary/10 rounded-full blur-3xl -z-10" />
-              <img
-                src={headshotImage}
-                alt="Cherice Heron"
-                className="w-full max-w-md transition-all duration-700 mix-blend-multiply"
-                data-testid="img-headshot"
-              />
+              <div 
+                className="w-full max-w-md aspect-square rounded-2xl overflow-hidden shadow-xl border border-border"
+                data-testid="container-headshot"
+              >
+                <img
+                  src={headshotImage}
+                  alt="Cherice Heron"
+                  className="w-full h-full object-cover transition-all duration-700"
+                  data-testid="img-headshot"
+                />
+              </div>
             </div>
           </div>
 
