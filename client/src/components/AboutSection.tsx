@@ -17,20 +17,15 @@ export default function AboutSection() {
     <section id="about" className="py-20 md:py-32 px-4" data-testid="section-about">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div className="flex justify-center lg:justify-start">
+            <div className="flex justify-center lg:justify-start">
             <div className="relative">
               <div className="absolute inset-0 bg-primary/10 rounded-full blur-3xl -z-10" />
-              <div 
-                className="w-full max-w-md aspect-square rounded-2xl overflow-hidden shadow-xl border border-border bg-[#FDF2F4]"
-                data-testid="container-headshot"
-              >
-                <img
-                  src={headshotImage}
-                  alt="Cherice Heron"
-                  className="w-full h-full object-cover transition-all duration-700 mix-blend-multiply scale-[2.2] translate-y-[5%]"
-                  data-testid="img-headshot"
-                />
-              </div>
+              <img
+                src={headshotImage}
+                alt="Cherice Heron"
+                className="w-full max-w-xl transition-all duration-700 mix-blend-multiply"
+                data-testid="img-headshot"
+              />
             </div>
           </div>
 
