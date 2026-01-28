@@ -34,15 +34,24 @@ export default function Resume() {
       ],
     },
     {
-      title: "Direct Support Professional",
-      company: "Various Organizations",
-      location: "New York, NY",
-      period: "2019 – 2023",
+      title: "Assistant Director",
+      company: "Wayside Out-Reach Development Inc",
+      location: "NY",
+      period: "2021 – 2024",
       achievements: [
-        "Provided personalized care and support for individuals with developmental disabilities",
-        "Developed individualized care plans and tracked progress toward goals",
-        "Facilitated community integration activities and medical appointment coordination",
-        "Maintained detailed documentation in compliance with regulatory standards",
+        "Managed program administration, documentation, and compliance, and helped organize recreational and educational activities for seniors",
+        "Synthesized reports maintained funding-related records and coordinated essential support services such as entitlement counseling and crisis intervention referrals",
+      ],
+    },
+    {
+      title: "Support Services Planner",
+      company: "Job Path",
+      location: "NY",
+      period: "2019 – 2021",
+      achievements: [
+        "Provided supportive care for individuals with intellectual and developmental disabilities, ensuring adherence to OPWDD guidelines",
+        "Assisted clients with daily living activities, addressed their needs and goals, and promoted positive relationships between caregivers and those served",
+        "Maintained client safety and well-being across various settings, supported the implementation of treatment plans and developmental or behavioral programs, and fostered participation in self-help activities and community engagement",
       ],
     },
   ];
