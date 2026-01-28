@@ -34,17 +34,6 @@ export default function Resume() {
       ],
     },
     {
-      title: "Digital Media Assistant",
-      company: "Barnard College",
-      location: "New York, NY",
-      period: "August 2023 – May 2024",
-      achievements: [
-        "Supported 200+ students and faculty with technical troubleshooting and multimedia production",
-        "Designed promotional materials and maintained digital signage systems across campus",
-        "Provided training on Adobe Creative Suite and video editing software",
-      ],
-    },
-    {
       title: "Direct Support Professional",
       company: "Various Organizations",
       location: "New York, NY",
