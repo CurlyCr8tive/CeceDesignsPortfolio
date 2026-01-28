@@ -22,18 +22,6 @@ export default function Resume() {
 
   const experience = [
     {
-      title: "UX/Product Designer & Frontend Developer",
-      company: "Freelance",
-      location: "Remote",
-      period: "January 2024 – Present",
-      achievements: [
-        "Designed and developed 3+ full-stack web applications focused on health, gaming, and data visualization",
-        "Conducted user research and usability testing to validate design decisions and improve user experience",
-        "Implemented responsive, accessible interfaces using React, TypeScript, and modern CSS frameworks",
-        "Collaborated with stakeholders to define product requirements and deliver pixel-perfect designs",
-      ],
-    },
-    {
       title: "Assistant Director",
       company: "Wayside Out-Reach Development Inc",
       location: "NY",
