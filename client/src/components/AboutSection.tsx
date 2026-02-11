@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Code, Palette, Zap, Users, Globe, Lightbulb } from "lucide-react";
+import { motion, useReducedMotion } from "framer-motion";
 import headshotImage1 from "@/../../attached_assets/Gemini_Generated_Image_9cb6ne9cb6ne9cb6_1769554395185.png";
 import headshotImage2 from "@/../../attached_assets/Gemini_Generated_Image_9cb6ne9cb6ne9cb6_(1)_1769554395185.png";
 import headshotImage3 from "@/../../attached_assets/Gemini_Generated_Image_9cb6ne9cb6ne9cb6_(2)_1769554395185.png";
@@ -15,22 +16,65 @@ const skills = [
 ];
 
 export default function AboutSection() {
+  const shouldReduceMotion = useReducedMotion();
+
+  const flowerVariants = {
+    hidden: { scale: 0.3, opacity: 0, rotate: -15 },
+    visible: (custom: number) => ({
+      scale: 1,
+      opacity: 1,
+      rotate: 0,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 15,
+        delay: custom * 0.2
+      }
+    })
+  };
+
+  const floatVariants = {
+    float: (custom: number) => ({
+      y: [0, -10, 0],
+      transition: {
+        duration: 3,
+        repeat: Infinity,
+        ease: "easeInOut",
+        delay: custom * 0.3
+      }
+    })
+  };
+
   return (
     <section id="about" className="py-20 md:py-32 px-4" data-testid="section-about">
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             <div className="flex justify-center lg:justify-start self-start pt-4">
             <div className="relative flex flex-col gap-4 w-full max-w-[240px]">
               <div className="absolute inset-0 bg-primary/10 rounded-full blur-3xl -z-10" />
               {[headshotImage1, headshotImage2, headshotImage3].map((img, idx) => (
-                <div key={idx} className="rounded-xl overflow-hidden bg-transparent">
-                  <img
-                    src={img}
-                    alt={idx === 0 ? "Equity" : idx === 1 ? "Accessibility" : "Clarity"}
-                    className="w-full aspect-[3/4] object-cover transition-all duration-700 mix-blend-multiply brightness-[1.02] contrast-[1.05]"
-                    data-testid={`img-headshot-${idx}`}
-                  />
-                </div>
+                <motion.div
+                  key={idx}
+                  variants={flowerVariants}
+                  initial={shouldReduceMotion ? { opacity: 0 } : "hidden"}
+                  whileInView={shouldReduceMotion ? { opacity: 1, transition: { delay: idx * 0.2 } } : "visible"}
+                  viewport={{ once: true, amount: 0.3 }}
+                  custom={idx}
+                >
+                  <motion.div
+                    variants={floatVariants}
+                    animate={shouldReduceMotion ? undefined : "float"}
+                    custom={idx}
+                    className="rounded-xl overflow-hidden bg-transparent"
+                  >
+                    <img
+                      src={img}
+                      alt={idx === 0 ? "Equity" : idx === 1 ? "Accessibility" : "Clarity"}
+                      className="w-full aspect-[3/4] object-contain mix-blend-darken brightness-[1.1] contrast-[1.1] bg-transparent"
+                      data-testid={`img-headshot-${idx}`}
+                    />
+                  </motion.div>
+                </motion.div>
               ))}
             </div>
           </div>
@@ -41,16 +85,16 @@ export default function AboutSection() {
             </h2>
             <div className="space-y-6 text-xl text-muted-foreground leading-relaxed max-w-2xl" data-testid="text-about-bio">
               <p>
-                I'm Cherice Heron, a UX/Product Designer who turns complex health and accessibility challenges into interfaces that feel simple, clear, and humane. I blend user research, inclusive design standards, and rapid prototyping to move teams from idea to working product without losing sight of the people who need it most. I believe design should reduce cognitive load and increase dignity; when products meet users where they are, outcomes improve for everyone.
+                I'm Cherice Heron, a UX/Product Designer focused on turning complex health and accessibility challenges into clear, human-centered interfaces. I combine research, inclusive design, and rapid prototyping to move ideas into working products without losing sight of the people who rely on them.
               </p>
               <p>
-                Recent work includes Nephra, an AI-assisted kidney-health companion that helps patients track symptoms and prepare for appointments; Health Equity NYC, a dashboard that makes dense public data easy to navigate for residents and community health workers; and Influencer Scouting Automation (ISA) for 1v1Me, which pulls creator and match data, scores fit and momentum, and generates outreach briefs so teams can prioritize the right players and creators. Across projects I focus on accessible patterns, clear empty states, and rapid prototyping loops to validate decisions with users.
+                My recent work includes Nephra, an AI-assisted kidney health companion; Health Equity NYC, a public health dashboard for residents and community health workers; and Influencer Scouting Automation (ISA) for 1v1Me, a data-driven creator scoring and outreach tool. Across projects, I prioritize accessibility, thoughtful empty states, and fast validation cycles grounded in real user needs.
               </p>
               <p>
-                I've completed UX/UI coursework and project work with General Assembly (Remote Flex), Springboard, and the Pursuit AI-Native Fellowship, and I bring earlier experience in research and direct care to every project.
+                I've trained with General Assembly, Springboard, and the Pursuit AI-Native Fellowship, and I bring a background in research and direct care to every build.
               </p>
               <p>
-                When I'm not polishing flows, you'll find me enjoying K-dramas, playing RPGs, or hanging out with my two cats—who insist on supervising every prototype.
+                When I'm not refining flows, I'm watching K-dramas, playing RPGs, or being supervised by my two cats.
               </p>
               <div className="pt-4 pb-12">
                 <Button 
