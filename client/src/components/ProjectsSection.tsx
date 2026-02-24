@@ -35,7 +35,7 @@ const projects = [
     description: "A mobile app design that transforms makeup organization from a stressful chore into a delightful, time-saving experience.",
     image: makeupBagImage,
     tags: ["Figma", "SurveyMonkey", "TryMata"],
-    link: "#"
+    link: "https://www.figma.com/make/QFQ16dsM1I4ohhCXxMA2Vs/Create-Case-Study-Document?t=GvSf4zRMxCQb1y2f-1"
   },
 ];
 
@@ -81,7 +81,18 @@ export default function ProjectsSection() {
                 <p className="text-lg text-muted-foreground leading-relaxed" data-testid={`text-project-description-${index}`}>
                   {project.description}
                 </p>
-                {project.link !== "#" ? (
+                {project.link.startsWith("http") ? (
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    <Button
+                      variant="ghost"
+                      className="text-primary p-0 h-auto text-lg font-bold group/btn no-default-hover-elevate no-default-active-elevate hover:bg-transparent"
+                      data-testid={`button-view-project-${index}`}
+                    >
+                      View Case Study
+                      <ExternalLink className="ml-2 w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
+                    </Button>
+                  </a>
+                ) : project.link !== "#" ? (
                   <Link href={project.link}>
                     <Button
                       variant="ghost"

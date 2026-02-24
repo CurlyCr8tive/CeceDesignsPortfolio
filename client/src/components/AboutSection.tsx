@@ -65,12 +65,16 @@ export default function AboutSection() {
                     variants={floatVariants}
                     animate={shouldReduceMotion ? undefined : "float"}
                     custom={idx}
-                    className="rounded-xl overflow-hidden bg-transparent"
+                    className="bg-transparent"
                   >
                     <img
                       src={img}
                       alt={idx === 0 ? "Equity" : idx === 1 ? "Accessibility" : "Clarity"}
-                      className="w-full aspect-[3/4] object-contain mix-blend-darken brightness-[1.1] contrast-[1.1] bg-transparent"
+                      className="w-full aspect-[3/4] object-contain mix-blend-multiply"
+                      style={{
+                        filter: 'contrast(1.2) brightness(0.95)',
+                        backgroundColor: 'transparent'
+                      }}
                       data-testid={`img-headshot-${idx}`}
                     />
                   </motion.div>
