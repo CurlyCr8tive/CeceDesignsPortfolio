@@ -35,7 +35,7 @@ const projects = [
     description: "A mobile app design that transforms makeup organization from a stressful chore into a delightful, time-saving experience.",
     image: makeupBagImage,
     tags: ["Figma", "SurveyMonkey", "TryMata"],
-    link: "https://www.figma.com/make/QFQ16dsM1I4ohhCXxMA2Vs/Create-Case-Study-Document?p=f&t=cZXp6BSb3BZITmzi-0&fullscreen=1"
+    link: "https://www.figma.com/make/QFQ16dsM1I4ohhCXxMA2Vs/Create-Case-Study-Document?fullscreen=1&t=EvMzHqZf0I7EB6Ox-1"
   },
 ];
 
