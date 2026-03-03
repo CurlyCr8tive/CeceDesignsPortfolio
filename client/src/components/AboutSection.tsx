@@ -89,7 +89,7 @@ export default function AboutSection() {
             </h2>
             <div className="space-y-6 text-xl text-muted-foreground leading-relaxed max-w-2xl" data-testid="text-about-bio">
               <p>
-                I'm Cherice Heron, a UX/Product Designer focused on turning complex health and accessibility challenges into clear, human-centered interfaces. I combine research, inclusive design, and rapid prototyping to move ideas into working products without losing sight of the people who rely on them.
+                I'm Cherice Heron, an AI UX/Product Designer focused on turning complex health and accessibility challenges into clear, human-centered interfaces. I combine research, inclusive design, and rapid prototyping to move ideas into working products without losing sight of the people who rely on them.
               </p>
               <p>
                 My recent work includes Nephra, an AI-assisted kidney health companion; Health Equity NYC, a public health dashboard for residents and community health workers; and Influencer Scouting Automation (ISA) for 1v1Me, a data-driven creator scoring and outreach tool. Across projects, I prioritize accessibility, thoughtful empty states, and fast validation cycles grounded in real user needs.
