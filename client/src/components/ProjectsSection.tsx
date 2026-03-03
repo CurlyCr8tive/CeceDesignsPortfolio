@@ -14,7 +14,7 @@ const projects = [
     description: "A comprehensive health tracking web application designed to support individuals managing chronic kidney disease (CKD).",
     image: project1,
     tags: ["React", "Anthropic Claude", "Supabase"],
-    link: "#"
+    link: "https://www.figma.com/make/tKrAyJkyDSXWm43uKcZTxO/Add-final-product-screenshots?fullscreen=1&t=c4P2npoTfH7iz9Ta-1"
   },
   {
     title: "Influencer CRM",
