@@ -20,10 +20,10 @@ export default function HeroSection() {
         <div className="text-left z-10">
           <h1 className="font-serif font-bold mb-6 text-foreground leading-tight" data-testid="text-hero-name">
             <span className="text-5xl md:text-7xl lg:text-8xl block mb-2">Hi, I'm Cherice.</span>
-            <span className="text-3xl md:text-5xl lg:text-6xl text-muted-foreground font-medium">A Product Designer & Creative Developer</span>
+            <span className="text-3xl md:text-5xl lg:text-6xl text-muted-foreground font-medium">AI UX/Product Designer & Creative Developer</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-xl leading-relaxed" data-testid="text-hero-tagline">
-            Crafting beautiful digital experiences that blend great design with real functionality.
+            Crafting beautiful digital experiences that blend great design with real functionality, with the power of AI.
           </p>
           <div className="flex gap-4">
             <Button
