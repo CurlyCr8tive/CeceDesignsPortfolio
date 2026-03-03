@@ -5,8 +5,8 @@ import { ExternalLink } from "lucide-react";
 import { Link } from "wouter";
 import project1 from "@assets/Screenshot (213)_1763432063864.png";
 import project2 from "@assets/Screenshot (217)_1763434952523.png";
-import project3 from "@assets/Screenshot (228)_1763438686608.png";
 import makeupBagImage from "@/../../attached_assets/Screenshot (229)_1763466455741.png";
+import connectionOsImage from "@/../../attached_assets/generated_images/Dashboard_web_app_project_358be8d2.png";
 
 const projects = [
   {
@@ -24,11 +24,12 @@ const projects = [
     link: "#"
   },
   {
-    title: "Health Equity NYC",
-    description: "A community-focused data visualization and analytics dashboard that empowers NYC residents, health workers, and advocates to understand health disparities across the five boroughs.",
-    image: project3,
-    tags: ["Recharts", "Next.js API Routes", "OpenAI API"],
-    link: "/projects/health-equity-nyc"
+    title: "Connection OS",
+    description: "A private weekly AI digest platform for Pursuit leadership, combining dashboard archives, automated synthesis, and scheduled email delivery during parental leave.",
+    image: connectionOsImage,
+    tags: ["Next.js 14", "FastAPI", "Supabase", "Claude API"],
+    link: "https://connectionos.vercel.app",
+    ctaLabel: "View Live Project"
   },
   {
     title: "My Makeup Bag",
@@ -88,7 +89,7 @@ export default function ProjectsSection() {
                       className="text-primary p-0 h-auto text-lg font-bold group/btn no-default-hover-elevate no-default-active-elevate hover:bg-transparent"
                       data-testid={`button-view-project-${index}`}
                     >
-                      View Case Study
+                      {project.ctaLabel ?? "View Case Study"}
                       <ExternalLink className="ml-2 w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
                     </Button>
                   </a>
@@ -99,7 +100,7 @@ export default function ProjectsSection() {
                       className="text-primary p-0 h-auto text-lg font-bold group/btn no-default-hover-elevate no-default-active-elevate hover:bg-transparent"
                       data-testid={`button-view-project-${index}`}
                     >
-                      View Case Study
+                      {project.ctaLabel ?? "View Case Study"}
                       <ExternalLink className="ml-2 w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
                     </Button>
                   </Link>
@@ -110,7 +111,7 @@ export default function ProjectsSection() {
                     onClick={() => console.log(`View project: ${project.title}`)}
                     data-testid={`button-view-project-${index}`}
                   >
-                    View Project
+                    {project.ctaLabel ?? "View Project"}
                     <ExternalLink className="ml-2 w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
                   </Button>
                 )}

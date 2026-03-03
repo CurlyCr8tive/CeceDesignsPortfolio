@@ -46,9 +46,9 @@ export default function Resume() {
 
   const projects = [
     {
-      name: "Health Equity NYC",
-      description: "Dashboard visualizing NYC health data by neighborhood with AI-driven insights",
-      tech: ["Next.js", "TypeScript", "Recharts", "OpenAI API", "Tailwind CSS"],
+      name: "Connection OS",
+      description: "Private weekly AI digest platform with dashboard archives, automated synthesis, and scheduled email delivery for Pursuit leadership",
+      tech: ["Next.js 14", "FastAPI", "Supabase", "Claude API", "Resend"],
     },
     {
       name: "Nephra",
