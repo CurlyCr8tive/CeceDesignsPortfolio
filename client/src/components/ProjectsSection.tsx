@@ -6,7 +6,7 @@ import { Link } from "wouter";
 import project1 from "@assets/Screenshot (213)_1763432063864.png";
 import project2 from "@assets/Screenshot (217)_1763434952523.png";
 import makeupBagImage from "@/../../attached_assets/Screenshot (229)_1763466455741.png";
-import connectionOsImage from "@/../../attached_assets/generated_images/Dashboard_web_app_project_358be8d2.png";
+import connectionOsImage from "@/../../attached_assets/generated_images/Creative_workspace_hero_background_affd3606.png";
 
 const projects = [
   {
@@ -21,7 +21,7 @@ const projects = [
     description: "A comprehensive influencer relationship management platform designed specifically for gaming content creators.",
     image: project2,
     tags: ["TypeScript", "Tailwind CSS", "Figma"],
-    link: "#"
+    link: "https://roof-tutu-33395121.figma.site/"
   },
   {
     title: "Connection OS",
