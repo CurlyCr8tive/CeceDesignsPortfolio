@@ -59,11 +59,11 @@ export default function ProjectsSection() {
               data-testid={`card-project-${index}`}
             >
               <div className="overflow-hidden rounded-xl border border-border bg-card shadow-sm transition-all duration-500 group-hover:shadow-md">
-                <div className={index <= 2 ? "overflow-hidden" : "aspect-video overflow-hidden"}>
+                <div className="aspect-[16/10] overflow-hidden bg-card">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className={index <= 2 ? "w-full object-contain transition-transform duration-700 group-hover:scale-105" : "w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"}
+                    className="h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                     data-testid={`img-project-${index}`}
                   />
                 </div>
