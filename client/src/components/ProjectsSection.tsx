@@ -43,8 +43,8 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="bg-background px-2 py-20 md:px-3 md:py-32" data-testid="section-projects">
-      <div className="mx-auto max-w-[90rem]">
+    <section id="projects" className="bg-background px-1 py-20 md:px-2 md:py-32" data-testid="section-projects">
+      <div className="mx-auto max-w-[110rem]">
         <h2 className="text-4xl md:text-6xl font-serif font-bold mb-4 text-center" data-testid="text-projects-title">
           Featured Projects
         </h2>
@@ -52,7 +52,7 @@ export default function ProjectsSection() {
           A selection of recent work that showcases my design and development expertise
         </p>
 
-        <div className="grid gap-8 lg:grid-cols-2 lg:gap-8">
+        <div className="grid gap-5 lg:grid-cols-2 lg:gap-5">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -60,7 +60,7 @@ export default function ProjectsSection() {
               data-testid={`card-project-${index}`}
             >
               <div className="overflow-hidden rounded-xl border border-border bg-card shadow-sm transition-all duration-500 group-hover:shadow-md">
-                <div className="aspect-[16/10] overflow-hidden bg-card">
+                <div className="aspect-[2/1] overflow-hidden bg-card">
                   <img
                     src={project.image}
                     alt={project.title}
@@ -69,7 +69,7 @@ export default function ProjectsSection() {
                   />
                 </div>
               </div>
-              <div className="flex flex-col gap-4 px-2">
+              <div className="flex flex-col gap-4 px-1">
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, tagIndex) => (
                     <Badge key={tagIndex} variant="secondary" className="bg-primary/5 text-primary border-none rounded-full px-4" data-testid={`badge-project-${index}-tag-${tagIndex}`}>
