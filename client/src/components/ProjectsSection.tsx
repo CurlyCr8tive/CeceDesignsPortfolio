@@ -43,8 +43,8 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="py-20 md:py-32 px-4 bg-background" data-testid="section-projects">
-      <div className="max-w-7xl mx-auto">
+    <section id="projects" className="bg-background px-2 py-20 md:px-3 md:py-32" data-testid="section-projects">
+      <div className="mx-auto max-w-[90rem]">
         <h2 className="text-4xl md:text-6xl font-serif font-bold mb-4 text-center" data-testid="text-projects-title">
           Featured Projects
         </h2>
@@ -52,7 +52,7 @@ export default function ProjectsSection() {
           A selection of recent work that showcases my design and development expertise
         </p>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid gap-8 lg:grid-cols-2 lg:gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
