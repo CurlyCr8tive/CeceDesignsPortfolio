@@ -6,7 +6,7 @@ import { Link } from "wouter";
 import project1 from "@assets/Screenshot (213)_1763432063864.png";
 import project2 from "@assets/Screenshot (217)_1763434952523.png";
 import makeupBagImage from "@/../../attached_assets/Screenshot (229)_1763466455741.png";
-import connectionOsImage from "@assets/generated_images/connectionos.png";
+import connectionOsImage from "@/../../attached_assets/connectionos-featured.png";
 
 const projects = [
   {
