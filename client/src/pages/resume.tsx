@@ -54,6 +54,7 @@ export default function Resume() {
       name: "Nephra",
       description: "Health tracking app for kidney disease patients with symptom logging and AI chat",
       tech: ["React", "Supabase", "OpenAI", "Recharts"],
+      href: "https://nephra-production.up.railway.app/auth",
     },
     {
       name: "Influencer CRM (1v1Me)",
@@ -230,6 +231,16 @@ export default function Resume() {
                     <Badge key={i} variant="outline" className="text-xs">{tech}</Badge>
                   ))}
                 </div>
+                {project.href && (
+                  <div className="mt-4">
+                    <a href={project.href} target="_blank" rel="noopener noreferrer">
+                      <Button variant="ghost" className="h-auto p-0 text-primary">
+                        View Live Build
+                        <ExternalLink className="w-4 h-4 ml-2" />
+                      </Button>
+                    </a>
+                  </div>
+                )}
               </Card>
             ))}
           </div>

@@ -15,13 +15,17 @@ const projects = [
     image: project1,
     imageClassName: "object-[40%_center]",
     tags: ["React", "Anthropic Claude", "Supabase"],
-    link: "https://www.figma.com/make/tKrAyJkyDSXWm43uKcZTxO/Add-final-product-screenshots?fullscreen=1&t=c4P2npoTfH7iz9Ta-1"
+    liveLink: "https://nephra-production.up.railway.app/auth",
+    link: "https://www.figma.com/make/tKrAyJkyDSXWm43uKcZTxO/Add-final-product-screenshots?fullscreen=1&t=c4P2npoTfH7iz9Ta-1",
+    ctaLabel: "View Case Study"
   },
   {
     title: "Influencer CRM",
     description: "A comprehensive influencer relationship management platform designed specifically for gaming content creators.",
     image: project2,
     tags: ["TypeScript", "Tailwind CSS", "Figma"],
+    liveLink: "https://www.figma.com/proto/P7CFHupP8gjnQlTDUl0E6R/1V1-Me-Frames?node-id=1-1015&p=f&t=kKh5C1k4HFk6FveG-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+    liveLinkLabel: "View Figma Design",
     link: "https://roof-tutu-33395121.figma.site/"
   },
   {
@@ -37,7 +41,8 @@ const projects = [
     description: "A mobile app design that transforms makeup organization from a stressful chore into a delightful, time-saving experience.",
     image: makeupBagImage,
     tags: ["Figma", "SurveyMonkey", "TryMata"],
-    link: "https://www.figma.com/make/QFQ16dsM1I4ohhCXxMA2Vs/Create-Case-Study-Document?fullscreen=1&t=EvMzHqZf0I7EB6Ox-1"
+    link: "https://www.figma.com/proto/mLU5fl7zKiiqdQR0cuojyS/My-Makeup-Bag-Prototype?node-id=95-2150&t=MkHqGgaIilkdP5Jx-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+    ctaLabel: "View Prototype"
   },
 ];
 
@@ -83,6 +88,17 @@ export default function ProjectsSection() {
                 <p className="text-lg text-muted-foreground leading-relaxed" data-testid={`text-project-description-${index}`}>
                   {project.description}
                 </p>
+                {project.liveLink && (
+                  <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                    <Button
+                      variant="ghost"
+                      className="text-primary p-0 h-auto text-lg font-bold group/btn no-default-hover-elevate no-default-active-elevate hover:bg-transparent"
+                    >
+                      {project.liveLinkLabel ?? "View Live Project"}
+                      <ExternalLink className="ml-2 w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
+                    </Button>
+                  </a>
+                )}
                 {project.link.startsWith("http") ? (
                   <a href={project.link} target="_blank" rel="noopener noreferrer">
                     <Button
