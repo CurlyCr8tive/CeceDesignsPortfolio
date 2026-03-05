@@ -25,7 +25,7 @@ const projects = [
     image: project2,
     tags: ["TypeScript", "Tailwind CSS", "Figma"],
     liveLink: "https://www.figma.com/proto/P7CFHupP8gjnQlTDUl0E6R/1V1-Me-Frames?node-id=1-1015&p=f&t=kKh5C1k4HFk6FveG-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
-    liveLinkLabel: "View Figma Design",
+    liveLinkLabel: "View Prototype",
     link: "https://roof-tutu-33395121.figma.site/"
   },
   {
@@ -41,6 +41,8 @@ const projects = [
     description: "A mobile app design that transforms makeup organization from a stressful chore into a delightful, time-saving experience.",
     image: makeupBagImage,
     tags: ["Figma", "SurveyMonkey", "TryMata"],
+    liveLink: "https://www.figma.com/make/QFQ16dsM1I4ohhCXxMA2Vs/My-Makeup-Bag-Case-Study?fullscreen=1&t=77ZH6M4sICXud6U0-1",
+    liveLinkLabel: "View Case Study",
     link: "https://www.figma.com/proto/mLU5fl7zKiiqdQR0cuojyS/My-Makeup-Bag-Prototype?node-id=95-2150&t=MkHqGgaIilkdP5Jx-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
     ctaLabel: "View Prototype"
   },
