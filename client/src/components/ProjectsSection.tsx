@@ -1,4 +1,3 @@
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
@@ -58,6 +57,11 @@ export default function ProjectsSection() {
         <p className="text-center text-muted-foreground text-lg mb-12 max-w-2xl mx-auto" data-testid="text-projects-subtitle">
           A selection of recent work that showcases my design and development expertise
         </p>
+
+        <div className="grid lg:grid-cols-2 lg:gap-5 mb-4">
+          <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">AI Builds</p>
+          <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">Figma Designs</p>
+        </div>
 
         <div className="grid gap-5 lg:grid-cols-2 lg:gap-5">
           {projects.map((project, index) => (
