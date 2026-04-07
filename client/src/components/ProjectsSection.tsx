@@ -32,8 +32,10 @@ const projects = [
     description: "A private weekly AI digest platform for Pursuit leadership, combining dashboard archives, automated synthesis, and scheduled email delivery during parental leave.",
     image: connectionOsImage,
     tags: ["Next.js 14", "FastAPI", "Supabase", "Claude API"],
-    link: "https://connectionos.vercel.app",
-    ctaLabel: "View Live Project"
+    link: "https://www.figma.com/make/jcrHmW4iuzbW2bGjfKIdey/Create-Case-Study?fullscreen=1&t=y30dKhWNSdKy5bMq-1",
+    ctaLabel: "View Case Study",
+    liveLink: "https://connectionos.vercel.app",
+    liveLinkLabel: "View Live Project"
   },
   {
     title: "My Makeup Bag",
