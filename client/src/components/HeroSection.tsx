@@ -23,7 +23,7 @@ export default function HeroSection() {
             <span className="text-3xl md:text-5xl lg:text-6xl text-muted-foreground font-medium">AI UX/Product Designer & Creative Developer</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-xl leading-relaxed" data-testid="text-hero-tagline">
-            Crafting beautiful digital experiences that blend great design with real functionality, with the power of AI.
+            Crafting functional and human centered digital experiences using the power of AI and research.
           </p>
           <div className="flex gap-4">
             <Button
