@@ -94,17 +94,6 @@ export default function ProjectsSection() {
                 <p className="text-lg text-muted-foreground leading-relaxed" data-testid={`text-project-description-${index}`}>
                   {project.description}
                 </p>
-                {project.liveLink && (
-                  <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                    <Button
-                      variant="ghost"
-                      className="text-primary p-0 h-auto text-lg font-bold group/btn no-default-hover-elevate no-default-active-elevate hover:bg-transparent"
-                    >
-                      {project.liveLinkLabel ?? "View Live Project"}
-                      <ExternalLink className="ml-2 w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
-                    </Button>
-                  </a>
-                )}
                 {project.link.startsWith("http") ? (
                   <a href={project.link} target="_blank" rel="noopener noreferrer">
                     <Button
@@ -137,6 +126,17 @@ export default function ProjectsSection() {
                     {project.ctaLabel ?? "View Project"}
                     <ExternalLink className="ml-2 w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
                   </Button>
+                )}
+                {project.liveLink && (
+                  <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                    <Button
+                      variant="ghost"
+                      className="text-primary p-0 h-auto text-lg font-bold group/btn no-default-hover-elevate no-default-active-elevate hover:bg-transparent"
+                    >
+                      {project.liveLinkLabel ?? "View Live Project"}
+                      <ExternalLink className="ml-2 w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
+                    </Button>
+                  </a>
                 )}
               </div>
             </div>
