@@ -65,7 +65,7 @@ export default function ProjectsSection() {
           <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">Figma Designs</p>
         </div>
 
-        <div className="grid gap-5 lg:grid-cols-2 lg:gap-5">
+        <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -96,50 +96,52 @@ export default function ProjectsSection() {
                 <p className="text-lg text-muted-foreground leading-relaxed flex-1" data-testid={`text-project-description-${index}`}>
                   {project.description}
                 </p>
-                {project.link.startsWith("http") ? (
-                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <div className="flex flex-col gap-3 mt-2">
+                  {project.link.startsWith("http") ? (
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <Button
+                        variant="ghost"
+                        className="text-primary p-0 h-auto text-lg font-bold group/btn no-default-hover-elevate no-default-active-elevate hover:bg-transparent"
+                        data-testid={`button-view-project-${index}`}
+                      >
+                        {project.ctaLabel ?? "View Case Study"}
+                        <ExternalLink className="ml-2 w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
+                      </Button>
+                    </a>
+                  ) : project.link !== "#" ? (
+                    <Link href={project.link}>
+                      <Button
+                        variant="ghost"
+                        className="text-primary p-0 h-auto text-lg font-bold group/btn no-default-hover-elevate no-default-active-elevate hover:bg-transparent"
+                        data-testid={`button-view-project-${index}`}
+                      >
+                        {project.ctaLabel ?? "View Case Study"}
+                        <ExternalLink className="ml-2 w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
+                      </Button>
+                    </Link>
+                  ) : (
                     <Button
                       variant="ghost"
                       className="text-primary p-0 h-auto text-lg font-bold group/btn no-default-hover-elevate no-default-active-elevate hover:bg-transparent"
+                      onClick={() => console.log(`View project: ${project.title}`)}
                       data-testid={`button-view-project-${index}`}
                     >
-                      {project.ctaLabel ?? "View Case Study"}
+                      {project.ctaLabel ?? "View Project"}
                       <ExternalLink className="ml-2 w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
                     </Button>
-                  </a>
-                ) : project.link !== "#" ? (
-                  <Link href={project.link}>
-                    <Button
-                      variant="ghost"
-                      className="text-primary p-0 h-auto text-lg font-bold group/btn no-default-hover-elevate no-default-active-elevate hover:bg-transparent"
-                      data-testid={`button-view-project-${index}`}
-                    >
-                      {project.ctaLabel ?? "View Case Study"}
-                      <ExternalLink className="ml-2 w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
-                    </Button>
-                  </Link>
-                ) : (
-                  <Button
-                    variant="ghost"
-                    className="text-primary p-0 h-auto text-lg font-bold group/btn no-default-hover-elevate no-default-active-elevate hover:bg-transparent"
-                    onClick={() => console.log(`View project: ${project.title}`)}
-                    data-testid={`button-view-project-${index}`}
-                  >
-                    {project.ctaLabel ?? "View Project"}
-                    <ExternalLink className="ml-2 w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
-                  </Button>
-                )}
-                {project.liveLink && (
-                  <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                    <Button
-                      variant="ghost"
-                      className="text-primary p-0 h-auto text-lg font-bold group/btn no-default-hover-elevate no-default-active-elevate hover:bg-transparent"
-                    >
-                      {project.liveLinkLabel ?? "View Live Project"}
-                      <ExternalLink className="ml-2 w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
-                    </Button>
-                  </a>
-                )}
+                  )}
+                  {project.liveLink && (
+                    <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                      <Button
+                        variant="ghost"
+                        className="text-primary p-0 h-auto text-lg font-bold group/btn no-default-hover-elevate no-default-active-elevate hover:bg-transparent"
+                      >
+                        {project.liveLinkLabel ?? "View Live Project"}
+                        <ExternalLink className="ml-2 w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
+                      </Button>
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           ))}
