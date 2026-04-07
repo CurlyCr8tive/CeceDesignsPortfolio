@@ -96,12 +96,12 @@ export default function ProjectsSection() {
                 <p className="text-lg text-muted-foreground leading-relaxed flex-1" data-testid={`text-project-description-${index}`}>
                   {project.description}
                 </p>
-                <div className="flex flex-col gap-1 mt-2">
+                <div className="flex flex-col gap-0 mt-2">
                   {project.link.startsWith("http") ? (
-                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="block leading-none">
                       <Button
                         variant="ghost"
-                        className="text-primary p-0 h-auto text-lg font-bold group/btn no-default-hover-elevate no-default-active-elevate hover:bg-transparent"
+                        className="text-primary p-0 h-auto text-lg font-bold group/btn no-default-hover-elevate no-default-active-elevate hover:bg-transparent leading-none"
                         data-testid={`button-view-project-${index}`}
                       >
                         {project.ctaLabel ?? "View Case Study"}
@@ -109,10 +109,10 @@ export default function ProjectsSection() {
                       </Button>
                     </a>
                   ) : project.link !== "#" ? (
-                    <Link href={project.link}>
+                    <Link href={project.link} className="block leading-none">
                       <Button
                         variant="ghost"
-                        className="text-primary p-0 h-auto text-lg font-bold group/btn no-default-hover-elevate no-default-active-elevate hover:bg-transparent"
+                        className="text-primary p-0 h-auto text-lg font-bold group/btn no-default-hover-elevate no-default-active-elevate hover:bg-transparent leading-none"
                         data-testid={`button-view-project-${index}`}
                       >
                         {project.ctaLabel ?? "View Case Study"}
@@ -122,7 +122,7 @@ export default function ProjectsSection() {
                   ) : (
                     <Button
                       variant="ghost"
-                      className="text-primary p-0 h-auto text-lg font-bold group/btn no-default-hover-elevate no-default-active-elevate hover:bg-transparent"
+                      className="text-primary p-0 h-auto text-lg font-bold group/btn no-default-hover-elevate no-default-active-elevate hover:bg-transparent leading-none"
                       onClick={() => console.log(`View project: ${project.title}`)}
                       data-testid={`button-view-project-${index}`}
                     >
@@ -131,10 +131,10 @@ export default function ProjectsSection() {
                     </Button>
                   )}
                   {project.liveLink && (
-                    <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="-mt-1">
+                    <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="block leading-none">
                       <Button
                         variant="ghost"
-                        className="text-primary p-0 h-auto text-lg font-bold group/btn no-default-hover-elevate no-default-active-elevate hover:bg-transparent"
+                        className="text-primary p-0 h-auto text-lg font-bold group/btn no-default-hover-elevate no-default-active-elevate hover:bg-transparent leading-none"
                       >
                         {project.liveLinkLabel ?? "View Live Project"}
                         <ExternalLink className="ml-2 w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
