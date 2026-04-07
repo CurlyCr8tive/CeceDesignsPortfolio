@@ -17,6 +17,10 @@ export default function Navigation() {
   }, []);
 
   const scrollToSection = (id: string) => {
+    if (location !== "/") {
+      window.location.href = `/#${id}`;
+      return;
+    }
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -64,7 +68,6 @@ export default function Navigation() {
                     onClick={() => scrollToSection(link.id!)}
                     data-testid={`button-nav-${link.id}`}
                     className="text-foreground hover:text-primary font-bold transition-colors"
-                    disabled={location !== "/"}
                   >
                     {link.label}
                   </button>
