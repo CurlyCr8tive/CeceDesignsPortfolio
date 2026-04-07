@@ -131,7 +131,7 @@ export default function ProjectsSection() {
                     </Button>
                   )}
                   {project.liveLink && (
-                    <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                    <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="-mt-1">
                       <Button
                         variant="ghost"
                         className="text-primary p-0 h-auto text-lg font-bold group/btn no-default-hover-elevate no-default-active-elevate hover:bg-transparent"
