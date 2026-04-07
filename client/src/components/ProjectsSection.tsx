@@ -69,7 +69,7 @@ export default function ProjectsSection() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group flex flex-col gap-6"
+              className="group flex flex-col gap-6 h-full"
               data-testid={`card-project-${index}`}
             >
               <div className="overflow-hidden rounded-xl border border-border bg-card shadow-sm transition-all duration-500 group-hover:shadow-md">
@@ -82,7 +82,7 @@ export default function ProjectsSection() {
                   />
                 </div>
               </div>
-              <div className="flex flex-col gap-4 px-1">
+              <div className="flex flex-col gap-4 px-1 flex-1">
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, tagIndex) => (
                     <Badge key={tagIndex} variant="secondary" className="bg-primary/5 text-primary border-none rounded-full px-4" data-testid={`badge-project-${index}-tag-${tagIndex}`}>
@@ -93,7 +93,7 @@ export default function ProjectsSection() {
                 <h3 className="text-3xl md:text-4xl font-serif font-bold text-foreground" data-testid={`text-project-title-${index}`}>
                   {project.title}
                 </h3>
-                <p className="text-lg text-muted-foreground leading-relaxed" data-testid={`text-project-description-${index}`}>
+                <p className="text-lg text-muted-foreground leading-relaxed flex-1" data-testid={`text-project-description-${index}`}>
                   {project.description}
                 </p>
                 {project.link.startsWith("http") ? (
