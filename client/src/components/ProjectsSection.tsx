@@ -96,7 +96,7 @@ export default function ProjectsSection() {
                 <p className="text-lg text-muted-foreground leading-relaxed flex-1" data-testid={`text-project-description-${index}`}>
                   {project.description}
                 </p>
-                <div className="flex flex-col gap-3.5 mt-3.5">
+                <div className="flex flex-col gap-0 mt-2">
                   {project.link.startsWith("http") ? (
                     <a href={project.link} target="_blank" rel="noopener noreferrer" className="block leading-none">
                       <Button
