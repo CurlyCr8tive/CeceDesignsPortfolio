@@ -12,7 +12,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-20 md:py-32 px-4" data-testid="section-contact">
       <div className="max-w-2xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6" data-testid="text-contact-title">
+        <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-brand" data-testid="text-contact-title">
           Let's Work Together
         </h2>
         <p className="text-lg md:text-xl text-muted-foreground mb-8" data-testid="text-contact-subtitle">

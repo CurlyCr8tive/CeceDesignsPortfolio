@@ -53,7 +53,7 @@ export default function ProjectsSection() {
   return (
     <section id="projects" className="bg-background px-4 py-20 md:px-16 md:py-32" data-testid="section-projects">
       <div className="mx-auto max-w-[110rem]">
-        <h2 className="text-4xl md:text-6xl font-serif font-bold mb-4 text-center" data-testid="text-projects-title">
+        <h2 className="text-4xl md:text-6xl font-serif font-bold mb-4 text-center text-brand" data-testid="text-projects-title">
           Featured Projects
         </h2>
         <p className="text-center text-muted-foreground text-lg mb-12 max-w-2xl mx-auto" data-testid="text-projects-subtitle">
