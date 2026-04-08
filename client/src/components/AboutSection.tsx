@@ -45,42 +45,63 @@ export default function AboutSection() {
     })
   };
 
+  const principles = [
+    {
+      img: headshotImage1,
+      label: "Clarity",
+      title: "Making Complexity Simple",
+      description: "Designing with intuitive navigation, plain language, and immediate feedback so users always know where they are and what to do next.",
+    },
+    {
+      img: headshotImage2,
+      label: "Accessibility",
+      title: "Designing for Every Ability",
+      description: "Building with high contrast, keyboard navigation, and screen reader support from day one — validated with assistive technologies, not bolted on after.",
+    },
+    {
+      img: headshotImage3,
+      label: "Equity",
+      title: "Designing for Every User",
+      description: "Centering underrepresented communities in research and design decisions to close gaps and ensure equal outcomes across all backgrounds and abilities.",
+    },
+  ];
+
   return (
     <section id="about" className="py-20 md:py-32 px-4" data-testid="section-about">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-            <div className="flex justify-center lg:justify-start self-start pt-4">
-            <div className="relative flex flex-col gap-4 w-full max-w-[240px]">
-              <div className="absolute inset-0 bg-primary/10 rounded-full blur-3xl -z-10" />
-              {[headshotImage1, headshotImage2, headshotImage3].map((img, idx) => (
+          <div className="flex flex-col gap-6 self-start pt-4">
+            {principles.map((item, idx) => (
+              <motion.div
+                key={idx}
+                variants={flowerVariants}
+                initial={shouldReduceMotion ? { opacity: 0 } : "hidden"}
+                whileInView={shouldReduceMotion ? { opacity: 1, transition: { delay: idx * 0.2 } } : "visible"}
+                viewport={{ once: true, amount: 0.3 }}
+                custom={idx}
+                className="flex items-center gap-5"
+              >
                 <motion.div
-                  key={idx}
-                  variants={flowerVariants}
-                  initial={shouldReduceMotion ? { opacity: 0 } : "hidden"}
-                  whileInView={shouldReduceMotion ? { opacity: 1, transition: { delay: idx * 0.2 } } : "visible"}
-                  viewport={{ once: true, amount: 0.3 }}
+                  variants={floatVariants}
+                  animate={shouldReduceMotion ? undefined : "float"}
                   custom={idx}
+                  className="shrink-0"
                 >
-                  <motion.div
-                    variants={floatVariants}
-                    animate={shouldReduceMotion ? undefined : "float"}
-                    custom={idx}
-                    className="bg-transparent"
-                  >
-                    <img
-                      src={img}
-                      alt={idx === 0 ? "Clarity" : idx === 1 ? "Accessibility" : "Equity"}
-                      className="w-full aspect-square object-contain mix-blend-multiply"
-                      style={{
-                        filter: 'contrast(1.2) brightness(0.95)',
-                        backgroundColor: 'transparent'
-                      }}
-                      data-testid={`img-headshot-${idx}`}
-                    />
-                  </motion.div>
+                  <img
+                    src={item.img}
+                    alt={item.label}
+                    className="w-28 h-28 object-contain mix-blend-multiply"
+                    style={{ filter: 'contrast(1.2) brightness(0.95)' }}
+                    data-testid={`img-headshot-${idx}`}
+                  />
                 </motion.div>
-              ))}
-            </div>
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">{item.label}</p>
+                  <h3 className="text-lg font-semibold mb-1">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+                </div>
+              </motion.div>
+            ))}
           </div>
 
           <div>
