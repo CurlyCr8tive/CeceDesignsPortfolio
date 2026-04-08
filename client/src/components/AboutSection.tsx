@@ -2,9 +2,9 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Code, Palette, Zap, Users, Globe, Lightbulb } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
-import headshotImage1 from "@/../../attached_assets/Gemini_Generated_Image_9cb6ne9cb6ne9cb6_1769554395185.png";
-import headshotImage2 from "@/../../attached_assets/Gemini_Generated_Image_9cb6ne9cb6ne9cb6_(1)_1769554395185.png";
-import headshotImage3 from "@/../../attached_assets/Gemini_Generated_Image_9cb6ne9cb6ne9cb6_(2)_1769554395185.png";
+import headshotImage1 from "@/../../attached_assets/Clarity.png";
+import headshotImage2 from "@/../../attached_assets/Accessibility.png";
+import headshotImage3 from "@/../../attached_assets/Equity.png";
 
 const skills = [
   { icon: Palette, label: "UI/UX Design" },
@@ -69,8 +69,8 @@ export default function AboutSection() {
                   >
                     <img
                       src={img}
-                      alt={idx === 0 ? "Equity" : idx === 1 ? "Accessibility" : "Clarity"}
-                      className="w-full aspect-[3/4] object-contain mix-blend-multiply"
+                      alt={idx === 0 ? "Clarity" : idx === 1 ? "Accessibility" : "Equity"}
+                      className="w-full aspect-square object-contain mix-blend-multiply"
                       style={{
                         filter: 'contrast(1.2) brightness(0.95)',
                         backgroundColor: 'transparent'
