@@ -81,9 +81,6 @@ export default function AboutSection() {
                 custom={idx}
                 className="flex flex-1 flex-col justify-center py-8"
               >
-                {/* Large label spans full width above the row */}
-                <p className="text-3xl font-black uppercase tracking-widest text-primary mb-4">{item.label}</p>
-
                 {/* Icon left, text right */}
                 <div className="flex items-center gap-6">
                   <motion.div
@@ -100,8 +97,8 @@ export default function AboutSection() {
                     />
                   </motion.div>
                   <div className="max-w-[200px]">
-                    <h3 className="text-base font-bold mb-2">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+                    <h3 className="text-xl font-bold mb-2">{item.title}</h3>
+                    <p className="text-base text-muted-foreground leading-relaxed">{item.description}</p>
                   </div>
                 </div>
               </motion.div>
