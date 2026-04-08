@@ -95,13 +95,13 @@ export default function AboutSection() {
                     <img
                       src={item.img}
                       alt={item.label}
-                      className="w-56 h-56 object-contain mix-blend-multiply"
+                      className="w-64 h-64 object-contain mix-blend-multiply"
                       data-testid={`img-headshot-${idx}`}
                     />
                   </motion.div>
-                  <div className="max-w-[160px]">
-                    <h3 className="text-sm font-bold mb-1">{item.title}</h3>
-                    <p className="text-xs text-muted-foreground leading-relaxed">{item.description}</p>
+                  <div className="max-w-[200px]">
+                    <h3 className="text-base font-bold mb-2">{item.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
                   </div>
                 </div>
               </motion.div>
