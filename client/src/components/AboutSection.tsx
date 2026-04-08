@@ -87,7 +87,7 @@ export default function AboutSection() {
                     variants={floatVariants}
                     animate={shouldReduceMotion ? undefined : "float"}
                     custom={idx}
-                    className="shrink-0"
+                    className="shrink-0 bg-white"
                   >
                     <img
                       src={item.img}
@@ -106,7 +106,7 @@ export default function AboutSection() {
           </div>
 
           <div>
-            <h2 className="text-4xl md:text-6xl font-serif font-bold mb-8 text-brand" data-testid="text-about-title">
+            <h2 className="text-4xl md:text-6xl font-serif font-bold mb-8" style={{color:'#A24D64'}} data-testid="text-about-title">
               About Me
             </h2>
             <div className="space-y-6 text-xl text-muted-foreground leading-relaxed max-w-2xl" data-testid="text-about-bio">
