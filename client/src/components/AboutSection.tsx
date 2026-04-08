@@ -87,7 +87,7 @@ export default function AboutSection() {
                     variants={floatVariants}
                     animate={shouldReduceMotion ? undefined : "float"}
                     custom={idx}
-                    className="shrink-0 bg-white"
+                    className="shrink-0 isolate rounded-xl overflow-hidden" style={{background:'white'}}
                   >
                     <img
                       src={item.img}
