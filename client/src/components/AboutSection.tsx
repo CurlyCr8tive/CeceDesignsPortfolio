@@ -70,7 +70,7 @@ export default function AboutSection() {
     <section id="about" className="py-20 md:py-32 px-4" data-testid="section-about">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
-          <div className="flex flex-col h-full">
+          <div className="flex flex-col h-full divide-y">
             {principles.map((item, idx) => (
               <motion.div
                 key={idx}
@@ -79,28 +79,30 @@ export default function AboutSection() {
                 whileInView={shouldReduceMotion ? { opacity: 1, transition: { delay: idx * 0.2 } } : "visible"}
                 viewport={{ once: true, amount: 0.3 }}
                 custom={idx}
-                className="flex flex-1 items-center gap-6 border-b last:border-b-0 py-4"
+                className="flex flex-1 flex-col justify-center py-8"
               >
-                {/* Icon — large, fixed-width column */}
-                <motion.div
-                  variants={floatVariants}
-                  animate={shouldReduceMotion ? undefined : "float"}
-                  custom={idx}
-                  className="shrink-0 w-48 h-48 flex items-center justify-center"
-                >
-                  <img
-                    src={item.img}
-                    alt={item.label}
-                    className="w-48 h-48 object-contain mix-blend-multiply"
-                    data-testid={`img-headshot-${idx}`}
-                  />
-                </motion.div>
+                {/* Large label spans full width above the row */}
+                <p className="text-3xl font-black uppercase tracking-widest text-primary mb-4">{item.label}</p>
 
-                {/* Text */}
-                <div>
-                  <p className="text-xs font-black uppercase tracking-[0.2em] text-primary mb-1">{item.label}</p>
-                  <h3 className="text-base font-bold mb-1">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+                {/* Icon left, text right */}
+                <div className="flex items-center gap-6">
+                  <motion.div
+                    variants={floatVariants}
+                    animate={shouldReduceMotion ? undefined : "float"}
+                    custom={idx}
+                    className="shrink-0"
+                  >
+                    <img
+                      src={item.img}
+                      alt={item.label}
+                      className="w-36 h-36 object-contain mix-blend-multiply"
+                      data-testid={`img-headshot-${idx}`}
+                    />
+                  </motion.div>
+                  <div>
+                    <h3 className="text-base font-bold text-primary mb-1">{item.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+                  </div>
                 </div>
               </motion.div>
             ))}
