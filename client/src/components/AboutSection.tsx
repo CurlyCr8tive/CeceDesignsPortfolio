@@ -95,7 +95,7 @@ export default function AboutSection() {
                     <img
                       src={item.img}
                       alt={item.label}
-                      className="w-36 h-36 object-contain mix-blend-multiply"
+                      className="w-56 h-56 object-contain mix-blend-multiply"
                       data-testid={`img-headshot-${idx}`}
                     />
                   </motion.div>
