@@ -95,12 +95,12 @@ export default function Resume() {
 
   const featuredBuilds = [
     { name: "Nephra", href: "https://nephra-production.up.railway.app/auth" },
-    { name: "Pursuit Connection OS", href: null },
+    { name: "Pursuit Connection OS", href: "https://connectionos.vercel.app" },
   ];
 
   const featuredDesigns = [
-    { name: "Influencer CRM", href: null },
-    { name: "My Makeup Bag", href: null },
+    { name: "Influencer CRM", href: "https://www.figma.com/proto/P7CFHupP8gjnQlTDUl0E6R/1V1-Me-Frames?node-id=1-1015&p=f&t=kKh5C1k4HFk6FveG-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" },
+    { name: "My Makeup Bag", href: "https://www.figma.com/proto/mLU5fl7zKiiqdQR0cuojyS/My-Makeup-Bag-Prototype?node-id=95-2150&t=MkHqGgaIilkdP5Jx-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" },
   ];
 
   return (
@@ -156,7 +156,13 @@ export default function Resume() {
               <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-2">Featured Figma Designs</p>
               <div className="flex gap-3">
                 {featuredDesigns.map((item, i) => (
-                  <span key={i} className="text-foreground font-medium text-sm">{item.name}</span>
+                  item.href ? (
+                    <a key={i} href={item.href} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium text-sm">
+                      {item.name}
+                    </a>
+                  ) : (
+                    <span key={i} className="text-foreground font-medium text-sm">{item.name}</span>
+                  )
                 ))}
               </div>
             </div>
@@ -230,7 +236,7 @@ export default function Resume() {
                     <p>{job.location}</p>
                   </div>
                 </div>
-                <ul className="space-y-2 list-disc list-inside text-muted-foreground">
+                <ul className="space-y-2 list-disc pl-5 text-muted-foreground">
                   {job.achievements.map((achievement, i) => (
                     <li key={i} className="leading-relaxed">{achievement}</li>
                   ))}
