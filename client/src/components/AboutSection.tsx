@@ -99,7 +99,7 @@ export default function AboutSection() {
                       data-testid={`img-headshot-${idx}`}
                     />
                   </motion.div>
-                  <div>
+                  <div className="max-w-[180px]">
                     <h3 className="text-base font-bold text-primary mb-1">{item.title}</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
                   </div>
