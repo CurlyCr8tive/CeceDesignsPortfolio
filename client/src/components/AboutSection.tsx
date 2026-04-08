@@ -70,7 +70,7 @@ export default function AboutSection() {
     <section id="about" className="py-20 md:py-32 px-4" data-testid="section-about">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-          <div className="flex flex-col gap-6 self-start pt-4">
+          <div className="flex flex-col gap-10 self-start pt-4">
             {principles.map((item, idx) => (
               <motion.div
                 key={idx}
@@ -79,26 +79,27 @@ export default function AboutSection() {
                 whileInView={shouldReduceMotion ? { opacity: 1, transition: { delay: idx * 0.2 } } : "visible"}
                 viewport={{ once: true, amount: 0.3 }}
                 custom={idx}
-                className="flex items-center gap-5"
               >
-                <motion.div
-                  variants={floatVariants}
-                  animate={shouldReduceMotion ? undefined : "float"}
-                  custom={idx}
-                  className="shrink-0"
-                >
-                  <img
-                    src={item.img}
-                    alt={item.label}
-                    className="w-28 h-28 object-contain mix-blend-multiply"
-                    style={{ filter: 'contrast(1.2) brightness(0.95)' }}
-                    data-testid={`img-headshot-${idx}`}
-                  />
-                </motion.div>
-                <div>
-                  <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">{item.label}</p>
-                  <h3 className="text-lg font-semibold mb-1">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+                <p className="text-2xl font-black uppercase tracking-widest text-primary mb-3">{item.label}</p>
+                <div className="flex items-start gap-4">
+                  <motion.div
+                    variants={floatVariants}
+                    animate={shouldReduceMotion ? undefined : "float"}
+                    custom={idx}
+                    className="shrink-0"
+                  >
+                    <img
+                      src={item.img}
+                      alt={item.label}
+                      className="w-24 h-24 object-contain mix-blend-multiply"
+                      style={{ filter: 'contrast(1.2) brightness(0.95)' }}
+                      data-testid={`img-headshot-${idx}`}
+                    />
+                  </motion.div>
+                  <div>
+                    <h3 className="text-base font-bold text-primary mb-1">{item.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+                  </div>
                 </div>
               </motion.div>
             ))}
