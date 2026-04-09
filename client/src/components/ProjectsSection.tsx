@@ -60,9 +60,9 @@ export default function ProjectsSection() {
           A selection of recent work that showcases my design and development expertise
         </p>
 
-        <div className="grid lg:grid-cols-2 lg:gap-5 mb-4">
-          <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">AI Builds</p>
-          <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">Figma Designs</p>
+        <div className="grid lg:grid-cols-2 lg:gap-16 mb-6">
+          <p className="text-2xl font-bold uppercase tracking-widest text-foreground">AI Builds</p>
+          <p className="text-2xl font-bold uppercase tracking-widest text-foreground">Figma Designs</p>
         </div>
 
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
