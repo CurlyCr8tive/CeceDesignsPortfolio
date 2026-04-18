@@ -32,7 +32,7 @@ const projects = [
     description: "A private weekly AI digest platform for Pursuit leadership, combining dashboard archives, automated synthesis, and scheduled email delivery during parental leave.",
     image: connectionOsImage,
     tags: ["Next.js 14", "FastAPI", "Supabase", "Claude API"],
-    link: "https://www.figma.com/make/jcrHmW4iuzbW2bGjfKIdey/Create-Case-Study?fullscreen=1&t=y30dKhWNSdKy5bMq-1",
+    link: "https://www.figma.com/make/jcrHmW4iuzbW2bGjfKIdey/Connection-OS-Case-Study?fullscreen=1&t=wwCyg6II0s9aqCGq-1",
     ctaLabel: "View Case Study",
     liveLink: "https://connectionos.vercel.app",
     liveLinkLabel: "View Live Project"
