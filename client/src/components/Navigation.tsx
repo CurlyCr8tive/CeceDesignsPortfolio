@@ -31,6 +31,7 @@ export default function Navigation() {
   const navLinks = [
     { label: "About", id: "about", type: "scroll" },
     { label: "Projects", id: "projects", type: "scroll" },
+    { label: "Services", id: "services", type: "scroll" },
     { label: "Resume", path: "/resume", type: "link" },
   ];
 
